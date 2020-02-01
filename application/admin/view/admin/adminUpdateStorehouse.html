@@ -1,0 +1,172 @@
+<!--_meta 作为公共模版分离出去-->
+{include file='admin/_meta'}
+<!--/meta 作为公共模版分离出去-->
+
+<link href="__STATIC__/hadmin/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 供货仓 <span class="c-gray en">&gt;</span> 修改供货仓 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <form action="javascript:;" method="post" class="form form-horizontal" id="form-article-add">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">账号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="账号" id="username">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">密码：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="密码" id="password" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">名字：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="供货仓名字" id="truename" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">管理者：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="管理者" id="adminname" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">电话：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="电话" id="phone" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">所属城市：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+                <select  class="form-control" id="city">
+
+                </select>
+				</span> </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button class="btn btn-primary radius sub"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+{include file='public/_footer'}
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__STATIC__/hadmin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script src="__STATIC__/js/common.js"></script>
+<script type="text/javascript">
+    //是否获取token令牌，如果没有获取，就要返回登陆界面
+    if(!window.base.getLocalStorage('adminToken')){
+        window.location.href = '/yxadmin';
+    }
+    id={$id};
+    $('#id').val(id);
+    //alert(id);
+    //获得id的供货仓详情
+    getOne();
+    function getOne(){
+        var params={
+            url:'/storehouse/adminGetStorehouseOne',
+            data:{'id':id},
+            type:"post",
+            tokenFlag:true,
+            sCallback:function(res) {
+                //填充商品信息
+                $('#username').val(res.username);
+                $('#password').val(res.password);
+                $('#truename').val(res.truename);
+                $('#adminname').val(res.adminname);
+                getCity(res.city_id);
+                $('#phone').val(res.phone);
+
+            },
+            eCallback:function(res){
+                alert('获得失败');
+            }
+        };
+        window.base.getAdminData(params);
+    }
+
+    //获得所有城市种类
+    function getCity(id){
+        var params={
+            url:'/city/adminGetCity',
+            data:{},
+            type:'post',
+            tokenFlag:true,
+            sCallback:function(res) {
+                if(res){
+                    var data = res;
+                    if (data){
+                        var len = data.length,str = '', item;
+                        if(len>0) {
+                            for (var i = 0; i < len; i++) {
+                                item = data[i];
+                                if(id == item.id){
+                                    str += '<option value="' + item.id + '" selected>' + item.name + '</option>';
+                                }else{
+                                    str += '<option value="' + item.id + '">' + item.name + '</option>';
+                                }
+
+                            }
+                        }
+                        $('#city').html(str);
+                    }
+                }else{
+                    layer.alert("没有城市");
+                }
+
+            },
+            eCallback:function(res){
+                alert('获得失败');
+            }
+        };
+        window.base.getAdminData(params);
+    }
+
+    //提交修改信息
+    $('.sub').click(function(){
+        var params={
+            url:'/storehouse/adminUpdateStorehouse',
+            data:{
+                'id':id,
+                'username':$('#username').val(),
+                'password':$('#password').val(),
+                'truename':$('#truename').val(),
+                'city':$('#city').val(),
+                'adminname':$('#adminname').val(),
+                'phone':$('#phone').val()
+            },
+            tokenFlag:true,
+            type:'post',
+            sCallback:function(res) {
+                if(res){
+                    layer.alert("修改成功");
+                }else {
+                    layer.alert("修改失败");
+                }
+            },
+            eCallback:function(res){
+                alert('请求错误');
+            }
+        };
+        window.base.getAdminData(params);
+    })
+</script>
+</body>
+</html>

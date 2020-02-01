@@ -1,0 +1,94 @@
+<!--_meta 作为公共模版分离出去-->
+{include file='admin/_meta'}
+<!--/meta 作为公共模版分离出去-->
+
+<link href="__STATIC__/hadmin/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 推广员 <span class="c-gray en">&gt;</span> 添加推广员 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <form action="javascript:;" method="post" class="form form-horizontal" id="form-article-add">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">账号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="推广员账号" id="username" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">密码：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="password" class="input-text" value="" placeholder="推广员密码" id="password" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">名字：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="" id="truename" placeholder="推广员名字" value="" class="input-text">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">手机号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="推广员手机号" id="phone" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button class="btn btn-primary radius sub"><i class="Hui-iconfont">&#xe632;</i> 提交</button>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+{include file='public/_footer'}
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__STATIC__/hadmin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script src="__STATIC__/js/common.js"></script>
+<script type="text/javascript">
+    //是否获取token令牌，如果没有获取，就要返回登陆界面
+    if(!window.base.getLocalStorage('adminToken')){
+        window.location.href = '/yxadmin';
+    }
+    //提交增加信息
+    $('.sub').click(function(){
+
+        var params={
+            url:'/eworker/adminAddEworker',
+            data:{'username':$('#username').val(),'password':$('#password').val(),'truename':$('#truename').val(),'phone':$('#phone').val()},
+            tokenFlag:true,
+            type:'post',
+            sCallback:function(res) {
+               if(res){
+                   layer.alert('添加成功');
+                   $('#username').val('');
+                   $('#password').val('');
+                   $('#truename').val('');
+                   $('#phone').val('');
+
+               }else{
+                   layer.alert('添加失败');
+               }
+
+            },
+            eCallback:function(res){
+                alert('推广员账号不能重复');
+            }
+        };
+        window.base.getAdminData(params);
+
+    })
+
+</script>
+</body>
+</html>

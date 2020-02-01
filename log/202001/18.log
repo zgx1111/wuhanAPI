@@ -1,0 +1,1512 @@
+[ 2020-01-18T20:03:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000575s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000215s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `category_id` = 9  AND `storehouse_id` = 6 [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (148,162,233,234,235,237,238) [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (965,966,967,968,969,970,971,972,973,993,994,995,996,997,999,1626,1627,1629,1630,1631,1632,1633,1634,3296,3297,3298,3299,3300,3301,3302,3303,3304,3305,3309,3310,3311,3312,3313,3314,3491,3492,3493,3494,3495,3496,3497,3498,3499) [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (148,162,233,234,235,237,238) [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1623,1624,1625,1698,1700,1701,3293,3294,3295,3306,3307,3308,3488,3489,3490) [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 148 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 162 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 233 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 234 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 235 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 237 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 238 LIMIT 1 [ RunTime:0.000156s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:26+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000531s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `category_id` = 10  AND `storehouse_id` = 6 [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (164,165,167,590,591,599) [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1711,1713,1714,1715,1716,1717,3391,3392,3393,3394,3395,3396,3397,3398,3399,3400,0,3404,3405,3406,3407,3408,3409,3410,3411,3412,3413,3414,3415,3416,3417,3418,0,3419,3420,3421,3422,3423,3424,3425,0,3426,3427,0,3464,3465,3466,3467,3468,3469,3470,3562,3563,3564,3565,3566,3567) [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (164,165,167,590,591,599) [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1710,1712,3388,3389,3390,3401,3402,3403,3461,3462,3463,3560,3561) [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 164 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 165 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 167 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 590 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 591 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 599 LIMIT 1 [ RunTime:0.000159s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:29+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `category_id` = 11  AND `storehouse_id` = 6 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (274,284,555) [ RunTime:0.001071s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1759,1760,1761,1762,1763,1764,1765,1766,1767,1883,1884,1885,1886,2253,2254,2255,2256) [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (274,284,555) [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1756,1757,1758,1882,2252) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 274 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 284 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 555 LIMIT 1 [ RunTime:0.000161s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `category_id` = 12  AND `storehouse_id` = 6 [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (168,169) [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1553,1554,1555,1556,1561,1562,1563,1564,1565,1566) [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (168,169) [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1550,1551,1552,1559,1560) [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 168 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 169 LIMIT 1 [ RunTime:0.000217s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1909,1911,1910,3095,2886,1915,1914,2263,1917,3096,2257,3089,3090) [ RunTime:0.000332s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000676s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000335s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000585s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `id` = 169 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 169 [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1561,1562,1563,1564,1565,1566) [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` = 169 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1559,1560) [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 169 LIMIT 1 [ RunTime:0.000176s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:39+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000583s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1909,1911,1910,3095,2886,1915,1914,2263,1917,3096,2257,3089,3090) [ RunTime:0.000313s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:03:40+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 78 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `category_id` = 1  AND `storehouse_id` = 6 [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (125,127,129,141,216,218,219,220,221,222,223,224,225,226,227,229,232,272,275,278,279,280,282,589) [ RunTime:0.001190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (796,797,798,799,800,801,802,803,805,806,807,808,809,810,811,812,813,817,818,819,827,828,829,835,836,837,838,839,840,841,842,843,845,853,854,855,856,857,858,860,861,862,863,864,865,866,867,869,870,871,872,873,874,875,876,877,878,879,890,891,892,893,894,895,896,897,899,900,901,902,903,904,906,934,935,936,937,946,947,948,949,950,951,952,953,954,955,956,957,958,1732,1733,1734,1735,1736,1737,1771,1772,1773,1774,1775,1776,1777,1778,1779,1780,1781,1793,1794,1795,1796,1797,1798,1799,1801,1802,1803,1804,1807,1808,1809,1859,1860,1861,1862,1863,1864,1865,1866,1867,1868,1869,1870,1871,1872,1873,2039,2040,2044,2045,2046,2047,2048,2049,2050,2051,2052,2053,2054,2055,2056,2057,2070,2071,2072,2073,2074,2075,2076,2077,2078,2079,2080,2081,2082,2083,2084,2085,2086,2087,2090,2091,2092,2093,2094,2095,2096,2097,2098,2099,2100,2101,2102,2103,2104,2105,2106,2107,2108,2109,2110,2111,2112,2113,2114,2115,2116,2117,2118,2119,2120,2121,2122,2123,2124,2125,2126,2136,2137,2138,2139,2140,2141,2142,2143,2144,2145,3362,3363,3364,3365,3366,3367,3368,3369,3370,3371,3372,3373,3374,3375,3376) [ RunTime:0.001543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (125,127,129,141,216,218,219,220,221,222,223,224,225,226,227,229,232,272,275,278,279,280,282,589) [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1450,1451,1453,1454,1455,1458,1462,1463,1464,1465,1468,1469,1471,1729,1730,1768,1769,1770,1791,1792,1800,1806,1857,1858,2037,2038,2042,2043,2068,2069,2088,2089,2128,2129,2130,2131,2132,2133,2134,2135,2146,2147,2148,2869,3361) [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 125 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 127 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 129 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 141 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 216 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 218 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 219 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 220 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 221 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 222 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 223 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 224 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 225 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 226 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 227 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 229 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 232 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 272 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 275 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 278 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 279 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 280 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 282 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 329  AND `product_id` = 589 LIMIT 1 [ RunTime:0.000162s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:04:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:05:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000554s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:06:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000247s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:07:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:08:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:09:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:10:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000333s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:11:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000569s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:12:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000539s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000242s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:13:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000226s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:14:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000248s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:15:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:16:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000553s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000221s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:17:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000213s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:18:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000222s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:19:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000413s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:20:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:21:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:22:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000217s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:23:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000226s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:24:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000263s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:25:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000539s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000216s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:26:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000246s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:27:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000226s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:28:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000222s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:29:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:30:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:31:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000563s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:32:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000536s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000217s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:33:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:34:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000533s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000270s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:35:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000211s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:36:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000231s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:37:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000222s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:38:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000215s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:39:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.002054s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000215s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:40:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000218s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:41:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000245s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:42:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000213s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:43:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:44:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000240s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:45:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000225s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:46:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000223s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:47:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000229s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:48:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000245s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:49:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000222s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:50:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000526s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000251s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:51:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000247s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:52:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000217s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:53:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000213s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:54:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000211s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:55:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000246s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:56:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:57:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000583s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.001772s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000238s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:58:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000247s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T20:59:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000224s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:00:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000216s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:01:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000251s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:02:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000217s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:03:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000599s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:04:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000237s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:05:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:06:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000239s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:07:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000436s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:08:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000527s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000279s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:09:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000535s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:10:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000257s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:11:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000269s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:12:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000226s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:13:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000217s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:14:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000597s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000255s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:15:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000213s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:16:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000269s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:17:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000516s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000258s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:18:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000238s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:19:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000586s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000257s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:20:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000239s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:21:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000222s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:22:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000225s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:23:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000528s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:24:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:25:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000584s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000222s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:26:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000563s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:27:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000548s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:28:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000526s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000434s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:29:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000549s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000211s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:30:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000575s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.001898s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:31:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000579s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000227s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:32:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:33:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000586s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000464s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:34:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000257s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:35:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000237s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:36:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000575s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000221s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:37:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:38:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:39:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000227s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:40:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000233s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:41:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000534s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000276s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:42:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000248s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:43:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:44:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000590s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000223s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:45:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000582s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000258s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:46:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000250s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:47:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:48:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000229s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:49:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:50:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000246s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:51:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000254s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:52:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000339s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:53:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000549s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000254s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:54:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000263s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:55:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:56:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000525s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:57:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:58:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T21:59:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:00:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000569s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:01:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000220s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:02:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.002083s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000224s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:03:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000208s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:04:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000539s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:05:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000582s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:06:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000226s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:07:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:08:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:09:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000215s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:10:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000229s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:11:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000275s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:12:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000535s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000222s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:13:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000616s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000219s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:14:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000536s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000228s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:15:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000229s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:16:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000531s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000239s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:17:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000632s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000263s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:18:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000254s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:19:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:20:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000527s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000269s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:21:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:22:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:23:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:24:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000280s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:25:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:26:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000533s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000275s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:27:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:28:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000231s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:29:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000255s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:30:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.001788s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000285s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:31:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:32:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000553s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:33:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000267s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:34:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:35:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000233s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:36:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000610s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000240s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:37:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000553s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:38:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000536s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000210s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.008450s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.024700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1055,1058,1057,1060) [ RunTime:0.000367s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.003985s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000723s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.003789s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.066499s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.002261s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001892s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.066329s ]
+[ sql ] [ SQL ] SELECT * FROM `category` LIMIT 12 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.006547s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1909,1911,1910,3095,2886,1915,1914,2263,1917,3096,2257,3089) [ RunTime:0.000347s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.012176s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.002133s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.001133s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002164s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.001848s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001847s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.004347s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1055,1058,1057,1060) [ RunTime:0.000248s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5WOUwu-BmjGgXqiamB14Gfs' LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`openid`) VALUES ('oPweb5WOUwu-BmjGgXqiamB14Gfs') [ RunTime:0.003478s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5WOUwu-BmjGgXqiamB14Gfs' LIMIT 1 [ RunTime:0.000279s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000599s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5WOUwu-BmjGgXqiamB14Gfs' LIMIT 1 [ RunTime:0.000253s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.011151s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5WOUwu-BmjGgXqiamB14Gfs' LIMIT 1 [ RunTime:0.000254s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001576s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5WOUwu-BmjGgXqiamB14Gfs' LIMIT 1 [ RunTime:0.000231s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001804s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013668s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 6  AND `category_id` <> 11 ORDER BY create_time desc LIMIT 10 [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (606,605,604,603,602,601,600,599,598,595) [ RunTime:0.002142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (3474,3475,3476,3477,3478,3479,3480,3481,3482,3483,3484,3485,3486,3487,3523,3524,3525,3526,3527,3528,3529,3530,3531,3532,3533,3534,3535,3536,3537,0,3538,3539,3540,3541,3542,3562,3563,3564,3565,3566,3567,0,3572,3573,3574,3576,3577,3578,0,3580,3581,3582,3583,3584,3585,3586,3588,3589,3590,3591,3592,3593,3594,3595,3596,3597,3598,3599,3601,3603,3605,3607,3608,3609,3610,3611,3612,3613,3614,3615,3616,3620,3621,3622,3623,3624,3625,3626,3627,3628,3629,3630,3631,3632) [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (606,605,604,603,602,601,600,599,598,595) [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (3471,3472,3473,3519,3520,3521,3522,3560,3561,3568,3575,3579,3587,3602,3604,3606,3617,3618,3619) [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 606 LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 605 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 604 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 603 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 602 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 601 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 600 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 599 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 598 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 595 LIMIT 1 [ RunTime:0.000165s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000511s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 6 ORDER BY sales Desc LIMIT 10 [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (46,173,60,47,606,192,36,274,602,196) [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (436,437,438,439,440,441,442,443,444,445,446,1759,1760,1761,1762,1763,1764,1765,1766,1767,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2590,2591,2592,2593,2594,2595,2596,2597,2598,2599,2600,2601,2602,2603,2830,2831,2832,2833,2834,2835,2836,2837,2838,2839,2840,2841,2842,2843,2844,2845,2846,2847,2848,2849,2850,2851,3198,3199,3200,3201,3202,3203,3204,3269,3270,3271,3272,3273,3274,3275,3580,3581,3582,3583,3584,3585,3586,3620,3621,3622,3623,3624,3625,3626,3627,3628,3629,3630,3631,3632) [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (46,173,60,47,606,192,36,274,602,196) [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1636,1637,1638,1647,1648,1649,1650,1756,1757,1758,2553,2554,2555,2587,2588,2589,2827,2828,2829,3195,3196,3197,3579,3617,3618,3619) [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 46 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 173 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 60 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 47 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 606 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 192 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 36 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 274 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 602 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 196 LIMIT 1 [ RunTime:0.000211s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000643s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 6  AND `category_id` <> 11 ORDER BY create_time desc LIMIT 10 [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (606,605,604,603,602,601,600,599,598,595) [ RunTime:0.001838s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (3474,3475,3476,3477,3478,3479,3480,3481,3482,3483,3484,3485,3486,3487,3523,3524,3525,3526,3527,3528,3529,3530,3531,3532,3533,3534,3535,3536,3537,0,3538,3539,3540,3541,3542,3562,3563,3564,3565,3566,3567,0,3572,3573,3574,3576,3577,3578,0,3580,3581,3582,3583,3584,3585,3586,3588,3589,3590,3591,3592,3593,3594,3595,3596,3597,3598,3599,3601,3603,3605,3607,3608,3609,3610,3611,3612,3613,3614,3615,3616,3620,3621,3622,3623,3624,3625,3626,3627,3628,3629,3630,3631,3632) [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (606,605,604,603,602,601,600,599,598,595) [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (3471,3472,3473,3519,3520,3521,3522,3560,3561,3568,3575,3579,3587,3602,3604,3606,3617,3618,3619) [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 606 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 605 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 604 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 603 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 602 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 601 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 600 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 599 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 598 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 595 LIMIT 1 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:39:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000638s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 146 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 6 ORDER BY sales Desc LIMIT 10 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (46,173,60,47,606,192,36,274,602,196) [ RunTime:0.002034s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (436,437,438,439,440,441,442,443,444,445,446,1759,1760,1761,1762,1763,1764,1765,1766,1767,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2590,2591,2592,2593,2594,2595,2596,2597,2598,2599,2600,2601,2602,2603,2830,2831,2832,2833,2834,2835,2836,2837,2838,2839,2840,2841,2842,2843,2844,2845,2846,2847,2848,2849,2850,2851,3198,3199,3200,3201,3202,3203,3204,3269,3270,3271,3272,3273,3274,3275,3580,3581,3582,3583,3584,3585,3586,3620,3621,3622,3623,3624,3625,3626,3627,3628,3629,3630,3631,3632) [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (46,173,60,47,606,192,36,274,602,196) [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1636,1637,1638,1647,1648,1649,1650,1756,1757,1758,2553,2554,2555,2587,2588,2589,2827,2828,2829,3195,3196,3197,3579,3617,3618,3619) [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 46 LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 173 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 60 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 47 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 606 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 192 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 36 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 274 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 602 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 330  AND `product_id` = 196 LIMIT 1 [ RunTime:0.000205s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:40:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000339s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:41:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000525s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000233s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:42:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000242s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:43:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000215s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:44:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000536s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000224s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:45:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000218s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:46:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000290s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:47:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000559s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000209s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:48:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000553s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000262s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:49:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000227s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:50:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000215s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:51:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000231s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:52:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000489s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:53:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000261s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:54:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000242s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:55:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000255s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:56:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000251s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:57:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000583s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000224s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:58:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000238s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T22:59:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000282s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:00:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000262s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:01:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000272s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:02:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000373s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:03:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000211s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:04:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000261s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:05:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000369s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:06:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000236s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:07:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000531s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000223s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:08:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000259s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:09:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000233s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:10:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:11:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000535s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000246s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:12:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.001815s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:13:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000549s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000236s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:14:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000235s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:15:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000266s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:16:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000563s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000229s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:17:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000217s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:18:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000563s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:19:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000522s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:20:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:21:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000245s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:22:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000265s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:23:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.002217s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000218s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:24:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000225s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:25:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:26:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000236s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:27:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000548s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000219s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:28:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000582s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000248s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:29:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000237s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:30:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:31:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000266s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:32:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000240s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:33:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:34:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000528s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000259s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:35:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000248s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:36:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000537s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:37:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:38:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000258s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:39:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000591s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000215s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:40:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000522s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000264s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:41:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000539s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000257s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:42:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000584s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000219s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:43:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000260s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:44:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000223s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:45:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000236s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:46:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000553s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000250s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:47:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000221s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:48:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000229s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:49:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:50:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:51:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000528s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000250s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:52:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000529s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000251s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:53:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000223s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:54:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000259s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:55:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000216s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:56:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000241s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:57:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000529s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000255s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:58:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000364s ]
+
+---------------------------------------------------------------
+[ 2020-01-18T23:59:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 6 [ RunTime:0.000247s ]
+
+---------------------------------------------------------------

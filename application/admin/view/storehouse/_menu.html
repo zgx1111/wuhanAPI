@@ -1,0 +1,107 @@
+<aside class="Hui-aside">
+	<div class="menu_dropdown bk_2">
+		<dl>
+					<dt><i class="Hui-iconfont">&#xe616;</i> 文章管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
+						<ul>
+							<li><a data-href="/storehouse/articleAdd" data-title="添加文章" href="javascript:void(0)">添加文章</a></li>
+						</ul>
+						<ul>
+							<li><a data-href="/storehouse/articleAll" data-title="全部文章" href="javascript:void(0)">全部文章</a></li>
+						</ul>
+					</dd>
+				</dl>
+		<dl>
+			<dt><i class="Hui-iconfont">&#xe616;</i> 商品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="/storehouse/productAdd" data-title="添加商品" href="javascript:void(0)">添加商品</a></li>
+				</ul>
+				<ul>
+					<li><a data-href="/storehouse/productAll" data-title="全部商品" href="javascript:void(0)">全部商品</a></li>
+				</ul>
+				<ul>
+					<li><a data-href="/storehouse/productNo" data-title="售罄商品" href="javascript:void(0)">售罄商品</a></li>
+				</ul>
+				<ul>
+					<li><a data-href="/storehouse/productHot" data-title="热销商品" href="javascript:void(0)">热销商品</a></li>
+				</ul>
+				<ul>
+					<li><a data-href="/storehouse/productDead" data-title="滞销商品" href="javascript:void(0)">滞销商品</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt><i class="Hui-iconfont">&#xe616;</i> 订单管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="/storehouse/orderAll" data-title="查看订单" href="javascript:void(0)">查看订单</a></li>
+				</ul>
+				<ul>
+					<li><a data-href="/storehouse/orderRemind" data-title="提醒订单" href="javascript:void(0)">提醒订单</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt><i class="Hui-iconfont">&#xe616;</i> 门店管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="/storehouse/storeAll" data-title="查看门店" href="javascript:void(0)">查看门店</a></li>
+				</ul>
+				<ul>
+					<li><a data-href="/storehouse/storeOpenOrClose" data-title="开关店铺" href="javascript:void(0)">开关店铺</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl>
+			<dt><i class="Hui-iconfont">&#xe616;</i> 销售记录<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="/storehouse/payOrder" data-title="查看门店" href="javascript:void(0)">查看销售记录</a></li>
+				</ul>
+			
+			</dd>
+		</dl>
+		<dl>
+			<dt><i class="Hui-iconfont">&#xe616;</i> 仓库设置<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="/storehouse/info" data-title="查看信息" href="javascript:void(0)">查看信息</a></li>
+				</ul>
+				<ul>
+					<li><a data-href="/storehouse/updateTime" data-title="营业时间" href="javascript:void(0)">修改营业时间</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+	</div>
+</aside>
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+<audio id="mp3" src="__STATIC__/mp3/remind.mp3"> </audio>
+<script src="__STATIC__/js/common.js"></script>
+<script src="__STATIC__/js/jquery-3.4.1.min.js"></script>
+<script>
+    //setInterval("order()",10000000);//每59秒刷新查询一次
+    setInterval(function () {
+        var params={
+            url:'/order/remind',
+            data:{},
+            tokenFlag:true,
+            type:'post',
+            sCallback:function(data) {
+                if(data){
+                    var mp3 = $("#mp3")[0]; //播放提示音
+                    mp3.play();
+                    layer.alert('有新订单!!!');
+                    // setTimeout(function(){
+                    //     window.location.reload();
+                    // }, 3000);
+                }
+            },
+            eCallback:function(res){
+                alert(res);
+            }
+        };
+        window.base.getStorehouseData(params);
+    },60000)
+</script>

@@ -1,0 +1,1439 @@
+[ 2019-11-26T13:29:33+08:00 ] 127.0.0.1 127.0.0.1 GET /yxadult/public/
+[ log ] yxadult.cn/yxadult/public/ [运行时间：0.033667s][吞吐率：29.70req/s] [内存消耗：1,903.77kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:44:58+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] z.cn/ [运行时间：0.060938s][吞吐率：16.41req/s] [内存消耗：1,888.09kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:45:06+08:00 ] 127.0.0.1 127.0.0.1 GET /yxadmin
+[ log ] z.cn/yxadmin [运行时间：0.027562s][吞吐率：36.28req/s] [内存消耗：1,889.39kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:45:10+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/admin
+[ log ] z.cn/api/v1/admin [运行时间：0.059511s][吞吐率：16.80req/s] [内存消耗：2,948.10kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003584s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.011333s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = '123'  AND `password` = '123' LIMIT 1 [ RunTime:0.002719s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:45:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.030347s][吞吐率：32.95req/s] [内存消耗：1,901.99kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:45:10+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.048398s][吞吐率：20.66req/s] [内存消耗：1,880.29kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:45:13+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.033620s][吞吐率：29.74req/s] [内存消耗：2,038.39kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:45:13+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.071982s][吞吐率：13.89req/s] [内存消耗：2,975.88kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001053s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.010724s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.010344s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000347s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:50:48+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.028565s][吞吐率：35.01req/s] [内存消耗：1,899.89kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:50:48+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.077719s][吞吐率：12.87req/s] [内存消耗：3,041.40kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001198s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011913s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005141s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.010956s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000574s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:50:48+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.057379s][吞吐率：17.43req/s] [内存消耗：2,962.81kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001010s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005636s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000538s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:50:53+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.034532s][吞吐率：28.96req/s] [内存消耗：2,052.49kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:50:53+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.059597s][吞吐率：16.78req/s] [内存消耗：2,978.56kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001152s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006625s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008018s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000420s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.032180s][吞吐率：31.08req/s] [内存消耗：1,899.89kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:33+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.062146s][吞吐率：16.09req/s] [内存消耗：3,041.40kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000999s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005194s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005194s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005377s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000455s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:33+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.088663s][吞吐率：11.28req/s] [内存消耗：2,962.81kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001383s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009015s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000609s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.031567s][吞吐率：31.68req/s] [内存消耗：1,903.81kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:34+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.049110s][吞吐率：20.36req/s] [内存消耗：2,978.56kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000889s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005206s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005409s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000393s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.024474s][吞吐率：40.86req/s] [内存消耗：1,903.81kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:35+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.051021s][吞吐率：19.60req/s] [内存消耗：2,978.56kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005173s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005670s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000366s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:37+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/banner
+[ log ] z.cn/admin/banner [运行时间：0.029607s][吞吐率：33.78req/s] [内存消耗：1,899.77kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:37+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/banner/adminGetBanner
+[ log ] z.cn/api/v1/banner/adminGetBanner [运行时间：0.063371s][吞吐率：15.78req/s] [内存消耗：2,972.80kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001351s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.010874s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.006756s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (141,142,143,145) [ RunTime:0.000452s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:40+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/orderAll
+[ log ] z.cn/admin/orderAll [运行时间：0.029028s][吞吐率：34.45req/s] [内存消耗：1,899.84kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:40+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/adminGetOrderAll
+[ log ] z.cn/api/v1/order/adminGetOrderAll [运行时间：0.080484s][吞吐率：12.42req/s] [内存消耗：3,057.20kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000932s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.012364s ]
+[ sql ] [ SQL ] SELECT * FROM `order` LIMIT 0,15 [ RunTime:0.002555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005325s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.009791s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  ( `store`.`delete_time` IS NULL AND `store`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000561s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:51:40+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/adminGetOrderCount
+[ log ] z.cn/api/v1/order/adminGetOrderCount [运行时间：0.047127s][吞吐率：21.22req/s] [内存消耗：2,979.34kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001025s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005575s ]
+[ sql ] [ SQL ] SELECT * FROM `order` [ RunTime:0.000573s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:57:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.036739s][吞吐率：27.22req/s] [内存消耗：1,901.75kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:57:54+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.064720s][吞吐率：15.45req/s] [内存消耗：3,043.00kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001283s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006572s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005564s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005817s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000607s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:57:54+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.045485s][吞吐率：21.99req/s] [内存消耗：2,964.41kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001049s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005976s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000462s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:57:55+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.033076s][吞吐率：30.23req/s] [内存消耗：2,054.35kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T13:57:55+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.051013s][吞吐率：19.60req/s] [内存消耗：2,980.16kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005451s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004884s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000337s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:02:24+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] z.cn/ [运行时间：0.061816s][吞吐率：16.18req/s] [内存消耗：1,892.10kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:02:35+08:00 ] 127.0.0.1 127.0.0.1 GET /yxstorehouse
+[ log ] z.cn/yxstorehouse [运行时间：0.035327s][吞吐率：28.31req/s] [内存消耗：1,893.14kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:03:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/storehouse
+[ log ] z.cn/api/v1/storehouse [运行时间：0.057851s][吞吐率：17.29req/s] [内存消耗：2,982.86kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001091s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005820s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  `storehouse`.`delete_time` IS NULL  AND `username` = 'wh001'  AND `password` = '123' LIMIT 1 [ RunTime:0.000509s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:03:29+08:00 ] 127.0.0.1 127.0.0.1 GET /storehouse/index
+[ log ] z.cn/storehouse/index [运行时间：0.036437s][吞吐率：27.44req/s] [内存消耗：1,895.51kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:03:29+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.034054s][吞吐率：29.37req/s] [内存消耗：1,884.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:03:33+08:00 ] 127.0.0.1 127.0.0.1 GET /storehouse/productAll
+[ log ] z.cn/storehouse/productAll [运行时间：0.031487s][吞吐率：31.76req/s] [内存消耗：1,899.26kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:03:33+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/storehouseGetProduct
+[ log ] z.cn/api/v1/product/storehouseGetProduct [运行时间：0.061032s][吞吐率：16.38req/s] [内存消耗：3,102.80kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000983s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005438s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 LIMIT 0,15 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005444s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000485s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:03:33+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/getCount
+[ log ] z.cn/api/v1/product/getCount [运行时间：0.062459s][吞吐率：16.01req/s] [内存消耗：3,031.38kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001266s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005677s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 [ RunTime:0.000588s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:03:35+08:00 ] 127.0.0.1 127.0.0.1 GET /storehouse/productAdd
+[ log ] z.cn/storehouse/productAdd [运行时间：0.031736s][吞吐率：31.51req/s] [内存消耗：2,043.72kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:03:35+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/category/all
+[ log ] z.cn/api/v1/category/all [运行时间：0.056660s][吞吐率：17.65req/s] [内存消耗：2,977.74kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000932s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005358s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005629s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000320s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:04:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.157300s][吞吐率：6.36req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003711s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.015498s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000677s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:05:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.166937s][吞吐率：5.99req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014602s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017399s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001136s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:06:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.178329s][吞吐率：5.61req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003222s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016877s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001036s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:07:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.100281s][吞吐率：9.97req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001804s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010263s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000661s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:08:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.144834s][吞吐率：6.90req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003366s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.015518s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001078s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:09:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.073118s][吞吐率：13.68req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001089s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006058s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000328s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:10:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.134751s][吞吐率：7.42req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001640s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010168s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000638s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:11:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.108159s][吞吐率：9.25req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001856s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.011901s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:12:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.166525s][吞吐率：6.01req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002762s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017176s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000908s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:13:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.098308s][吞吐率：10.17req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001711s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.009335s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000633s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:14:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.169140s][吞吐率：5.91req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003068s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016826s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001014s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:15:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.129701s][吞吐率：7.71req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001836s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.013438s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000707s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:16:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.159707s][吞吐率：6.26req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002831s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016307s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001034s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:17:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.145688s][吞吐率：6.86req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002736s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016157s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001036s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:18:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.125599s][吞吐率：7.96req/s] [内存消耗：2,989.93kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002020s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.012660s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000634s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:19:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.162792s][吞吐率：6.14req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002894s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016882s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000876s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:20:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.121135s][吞吐率：8.26req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013313s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.009627s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000754s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:21:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.150417s][吞吐率：6.65req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002660s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017246s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001009s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:22:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.095953s][吞吐率：10.42req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001523s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.007865s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000614s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:23:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.212006s][吞吐率：4.72req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004722s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.021263s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001452s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:24:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.156867s][吞吐率：6.37req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014650s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016289s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001078s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:25:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.152559s][吞吐率：6.55req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003508s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017193s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000982s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:25:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.039494s][吞吐率：25.32req/s] [内存消耗：2,047.18kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:25:51+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.031822s][吞吐率：31.42req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:25:56+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.031840s][吞吐率：31.41req/s] [内存消耗：2,044.16kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:26:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.182096s][吞吐率：5.49req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003318s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017042s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001118s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:27:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.083484s][吞吐率：11.98req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001169s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006762s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000413s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:28:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.096340s][吞吐率：10.38req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001671s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010998s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:29:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.175396s][吞吐率：5.70req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012549s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.015940s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000999s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:29:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.038588s][吞吐率：25.91req/s] [内存消耗：2,047.18kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:29:57+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.039586s][吞吐率：25.26req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:30:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.024166s][吞吐率：41.38req/s] [内存消耗：1,903.81kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:30:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.477757s][吞吐率：2.09req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002819s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.370758s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001152s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:30:33+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.032673s][吞吐率：30.61req/s] [内存消耗：2,044.52kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:30:35+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.027256s][吞吐率：36.69req/s] [内存消耗：1,907.36kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:30:36+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.027144s][吞吐率：36.84req/s] [内存消耗：1,907.36kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:31:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.082729s][吞吐率：12.09req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001172s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006553s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.030956s][吞吐率：32.30req/s] [内存消耗：1,908.50kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.040444s][吞吐率：24.73req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:32:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.032260s][吞吐率：31.00req/s] [内存消耗：2,044.49kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:32:04+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.027900s][吞吐率：35.84req/s] [内存消耗：1,907.36kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:32:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.156130s][吞吐率：6.40req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001799s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.014311s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000642s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:32:48+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.042964s][吞吐率：23.28req/s] [内存消耗：1,908.50kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:32:48+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.040216s][吞吐率：24.87req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:32:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.031581s][吞吐率：31.66req/s] [内存消耗：2,044.49kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:32:55+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.040954s][吞吐率：24.42req/s] [内存消耗：1,907.36kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:33:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.031332s][吞吐率：31.92req/s] [内存消耗：1,908.50kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:33:12+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.064330s][吞吐率：15.54req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:33:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.031637s][吞吐率：31.61req/s] [内存消耗：2,044.49kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:33:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.104436s][吞吐率：9.58req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002161s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.011649s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000752s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:34:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.025964s][吞吐率：38.51req/s] [内存消耗：2,044.52kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:34:20+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.034707s][吞吐率：28.81req/s] [内存消耗：1,907.36kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:34:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.101404s][吞吐率：9.86req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001678s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010942s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000574s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:34:43+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.028815s][吞吐率：34.70req/s] [内存消耗：2,044.52kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:34:50+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.028770s][吞吐率：34.76req/s] [内存消耗：1,907.36kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:35:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.032504s][吞吐率：30.77req/s] [内存消耗：2,044.52kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:35:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.027474s][吞吐率：36.40req/s] [内存消耗：1,907.36kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:35:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.106568s][吞吐率：9.38req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003211s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.013601s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000763s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:36:19+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.030172s][吞吐率：33.14req/s] [内存消耗：2,044.52kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:36:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.026683s][吞吐率：37.48req/s] [内存消耗：1,907.36kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:36:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.106899s][吞吐率：9.35req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002371s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.011759s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000652s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:36:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.029452s][吞吐率：33.95req/s] [内存消耗：2,044.52kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:37:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.033661s][吞吐率：29.71req/s] [内存消耗：2,044.52kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:37:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.116017s][吞吐率：8.62req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001569s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010479s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000607s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:37:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.030607s][吞吐率：32.67req/s] [内存消耗：2,044.52kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:37:46+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.065404s][吞吐率：15.29req/s] [内存消耗：2,910.13kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001047s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.006055s ]
+[ sql ] [ SQL ] INSERT INTO `image` (`url` , `update_time` , `create_time`) VALUES ('/20191126/da636b35b1da247d5c1a8f0305f8d09e.jpg' , 1574750266 , 1574750266) [ RunTime:0.003928s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005774s ]
+[ sql ] [ SQL ] INSERT INTO `category` (`topic_img_id` , `name` , `update_time` , `create_time`) VALUES (151 , '1' , 1574750266 , 1574750266) [ RunTime:0.003842s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:37:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.028836s][吞吐率：34.68req/s] [内存消耗：1,907.70kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:37:52+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.066314s][吞吐率：15.08req/s] [内存消耗：2,986.24kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001246s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007309s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007027s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0,151) [ RunTime:0.000632s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:38:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.157251s][吞吐率：6.36req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002638s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.019788s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001272s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:39:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.031205s][吞吐率：32.05req/s] [内存消耗：2,056.41kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:39:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.058649s][吞吐率：17.05req/s] [内存消耗：2,986.24kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006370s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005467s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0,151) [ RunTime:0.000658s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:39:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.098104s][吞吐率：10.19req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001644s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.009728s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000452s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:40:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.148691s][吞吐率：6.73req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002645s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.015551s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000949s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:41:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.115663s][吞吐率：8.65req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002167s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.011185s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000626s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:42:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.111693s][吞吐率：8.95req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013131s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.011424s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000626s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:43:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminDeleteCategory?id=11
+[ log ] z.cn/api/v1/category/adminDeleteCategory?id=11 [运行时间：0.030322s][吞吐率：32.98req/s] [内存消耗：1,906.86kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:43:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.109567s][吞吐率：9.13req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003541s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.011089s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000972s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:44:27+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminDeleteCategory?id=11
+[ log ] z.cn/api/v1/category/adminDeleteCategory?id=11 [运行时间：0.057673s][吞吐率：17.34req/s] [内存消耗：2,904.58kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001012s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007424s ]
+[ sql ] [ SQL ] DELETE FROM `category`    WHERE  `id` = 11 [ RunTime:0.004409s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:44:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.054053s][吞吐率：18.50req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001381s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005270s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000583s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:44:36+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.040672s][吞吐率：24.59req/s] [内存消耗：1,908.50kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:44:36+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.035825s][吞吐率：27.91req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:44:40+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.026652s][吞吐率：37.52req/s] [内存消耗：1,907.70kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:44:40+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.052293s][吞吐率：19.12req/s] [内存消耗：2,985.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001202s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005938s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005475s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000423s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:45:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.152390s][吞吐率：6.56req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002631s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.015841s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001029s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:46:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.128650s][吞吐率：7.77req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001778s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010390s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000640s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:47:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.108957s][吞吐率：9.18req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010554s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.008898s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001173s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:48:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.028019s][吞吐率：35.69req/s] [内存消耗：1,907.73kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:48:16+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.063673s][吞吐率：15.71req/s] [内存消耗：2,985.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001025s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005548s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005777s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000449s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:48:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.160893s][吞吐率：6.22req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003387s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016807s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000893s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:49:07+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.035230s][吞吐率：28.38req/s] [内存消耗：2,056.41kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:49:07+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.065514s][吞吐率：15.26req/s] [内存消耗：2,985.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001103s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006251s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007059s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000445s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:49:22+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.028665s][吞吐率：34.89req/s] [内存消耗：1,903.81kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:49:28+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.062887s][吞吐率：15.90req/s] [内存消耗：2,910.32kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005974s ]
+[ sql ] [ SQL ] INSERT INTO `image` (`url` , `update_time` , `create_time`) VALUES ('/20191126/3549259c59af29cee8e83e7aa338d03e.jpg' , 1574750968 , 1574750968) [ RunTime:0.005091s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005653s ]
+[ sql ] [ SQL ] INSERT INTO `category` (`topic_img_id` , `name` , `update_time` , `create_time`) VALUES (152 , '123' , 1574750968 , 1574750968) [ RunTime:0.003631s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:49:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.099447s][吞吐率：10.06req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001587s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.011048s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000606s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:49:47+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.060598s][吞吐率：16.50req/s] [内存消耗：2,910.32kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001017s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005855s ]
+[ sql ] [ SQL ] INSERT INTO `image` (`url` , `update_time` , `create_time`) VALUES ('/20191126/e2a2189acc711ed60cdd954b15e15f6d.jpg' , 1574750987 , 1574750987) [ RunTime:0.003516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005162s ]
+[ sql ] [ SQL ] INSERT INTO `category` (`topic_img_id` , `name` , `update_time` , `create_time`) VALUES (153 , '123' , 1574750987 , 1574750987) [ RunTime:0.003371s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:50:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.037078s][吞吐率：26.97req/s] [内存消耗：1,907.73kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:50:02+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.078591s][吞吐率：12.72req/s] [内存消耗：2,987.16kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001184s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.008288s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007412s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0,152,153) [ RunTime:0.000458s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:50:09+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminDeleteCategory
+[ log ] z.cn/api/v1/category/adminDeleteCategory [运行时间：0.053448s][吞吐率：18.71req/s] [内存消耗：2,904.44kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001164s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005882s ]
+[ sql ] [ SQL ] DELETE FROM `category`    WHERE  `id` = 12 [ RunTime:0.003720s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:50:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminDeleteCategory
+[ log ] z.cn/api/v1/category/adminDeleteCategory [运行时间：0.053968s][吞吐率：18.53req/s] [内存消耗：2,904.44kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001304s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005816s ]
+[ sql ] [ SQL ] DELETE FROM `category`    WHERE  `id` = 13 [ RunTime:0.003881s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:50:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.173109s][吞吐率：5.78req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003629s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017486s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001115s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.033648s][吞吐率：29.72req/s] [内存消耗：1,908.50kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:10+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.041881s][吞吐率：23.88req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.026576s][吞吐率：37.63req/s] [内存消耗：1,903.78kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:11+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.070043s][吞吐率：14.28req/s] [内存消耗：3,045.03kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006086s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006032s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005679s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000626s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:11+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.070945s][吞吐率：14.10req/s] [内存消耗：2,966.45kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001690s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.007049s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000747s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:12+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.030507s][吞吐率：32.78req/s] [内存消耗：2,056.38kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.055029s][吞吐率：18.17req/s] [内存消耗：2,985.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001272s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005427s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005378s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000398s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.170314s][吞吐率：5.87req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013748s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.015558s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000935s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.032447s][吞吐率：30.82req/s] [内存消耗：2,056.41kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:39+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.055977s][吞吐率：17.86req/s] [内存消耗：2,985.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000879s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005143s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.006707s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000395s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.026034s][吞吐率：38.41req/s] [内存消耗：1,907.73kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:39+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.063795s][吞吐率：15.68req/s] [内存消耗：2,985.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007418s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005811s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000401s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.031126s][吞吐率：32.13req/s] [内存消耗：2,044.49kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:51+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/addCate
+[ log ] z.cn/api/v1/category/addCate [运行时间：0.064480s][吞吐率：15.51req/s] [内存消耗：2,910.32kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.006070s ]
+[ sql ] [ SQL ] INSERT INTO `image` (`url` , `update_time` , `create_time`) VALUES ('/20191126/f02e0b724d482082248f27742e372728.jpg' , 1574751111 , 1574751111) [ RunTime:0.004880s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007650s ]
+[ sql ] [ SQL ] INSERT INTO `category` (`topic_img_id` , `name` , `update_time` , `create_time`) VALUES (154 , '梨花带雨2' , 1574751111 , 1574751111) [ RunTime:0.003235s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:52+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/addCate
+[ log ] z.cn/admin/addCate [运行时间：0.028169s][吞吐率：35.50req/s] [内存消耗：1,904.35kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:53+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.030985s][吞吐率：32.27req/s] [内存消耗：1,907.70kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:54+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.060835s][吞吐率：16.44req/s] [内存消耗：2,986.43kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000972s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005398s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.006812s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0,154) [ RunTime:0.000760s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:57+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminDeleteCategory
+[ log ] z.cn/api/v1/category/adminDeleteCategory [运行时间：0.051468s][吞吐率：19.43req/s] [内存消耗：2,904.44kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001011s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005978s ]
+[ sql ] [ SQL ] DELETE FROM `category`    WHERE  `id` = 14 [ RunTime:0.003704s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.026567s][吞吐率：37.64req/s] [内存消耗：1,908.24kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:51:58+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.055268s][吞吐率：18.09req/s] [内存消耗：2,985.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.004984s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005611s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000362s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:52:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.208621s][吞吐率：4.79req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016807s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.021807s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.002619s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:53:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.147084s][吞吐率：6.80req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003116s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.018192s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000984s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:54:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.165526s][吞吐率：6.04req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002615s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016812s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001172s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:55:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.136926s][吞吐率：7.30req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001646s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010734s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000634s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:56:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.150871s][吞吐率：6.63req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002632s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.018325s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000984s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:57:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.173416s][吞吐率：5.77req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003086s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016098s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001162s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:58:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.146215s][吞吐率：6.84req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002821s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016147s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001213s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T14:59:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.159240s][吞吐率：6.28req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002824s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017141s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000981s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:00:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.162681s][吞吐率：6.15req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002516s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016558s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000971s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:01:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.097034s][吞吐率：10.31req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002323s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010014s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000650s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:02:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.114970s][吞吐率：8.70req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002068s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.011200s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000697s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:03:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.169483s][吞吐率：5.90req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002995s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017739s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001010s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:04:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.145905s][吞吐率：6.85req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004184s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017035s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001030s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:05:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.146452s][吞吐率：6.83req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002923s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016203s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001021s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:06:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.106359s][吞吐率：9.40req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001610s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010019s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000658s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:07:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.098766s][吞吐率：10.12req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001599s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010108s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000635s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:08:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.141836s][吞吐率：7.05req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002536s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.015728s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000969s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:09:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.170486s][吞吐率：5.87req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002765s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.017264s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000972s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:10:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.220504s][吞吐率：4.54req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019396s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.024498s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.002035s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:11:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.153544s][吞吐率：6.51req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002764s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016722s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001083s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:12:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.177972s][吞吐率：5.62req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003262s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.016485s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001002s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:13:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.165716s][吞吐率：6.03req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002713s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.018062s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.001174s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:14:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/remind
+[ log ] z.cn/api/v1/order/remind [运行时间：0.141858s][吞吐率：7.05req/s] [内存消耗：2,991.96kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011858s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.009909s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000768s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:08+08:00 ] 127.0.0.1 127.0.0.1 GET /yxadmin
+[ log ] z.cn/yxadmin [运行时间：0.041691s][吞吐率：23.99req/s] [内存消耗：1,895.13kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:15+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/admin
+[ log ] z.cn/api/v1/admin [运行时间：0.146624s][吞吐率：6.82req/s] [内存消耗：2,953.84kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005186s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.023249s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = '123'  AND `password` = '123' LIMIT 1 [ RunTime:0.003427s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:15+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.043446s][吞吐率：23.02req/s] [内存消耗：1,907.98kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:15+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.043798s][吞吐率：22.83req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.039579s][吞吐率：25.27req/s] [内存消耗：1,903.78kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:17+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.104594s][吞吐率：9.56req/s] [内存消耗：3,045.03kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001378s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009138s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.009187s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.008669s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000752s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:17+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.109323s][吞吐率：9.15req/s] [内存消耗：2,966.45kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010754s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.012905s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000911s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:20+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.068022s][吞吐率：14.70req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001211s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006244s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006251s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006130s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000512s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:20+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.067594s][吞吐率：14.79req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001175s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.007112s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005987s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005991s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000497s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.068894s][吞吐率：14.52req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001042s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006573s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006017s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006566s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000563s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.069982s][吞吐率：14.29req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001060s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006942s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005786s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006894s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000674s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:51:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.095936s][吞吐率：10.42req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001171s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005760s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.023834s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.017781s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000401s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:52:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.032295s][吞吐率：30.96req/s] [内存消耗：2,044.48kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:52:06+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.083269s][吞吐率：12.01req/s] [内存消耗：3,045.03kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001108s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005819s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.008956s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005883s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000664s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:52:07+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.051575s][吞吐率：19.39req/s] [内存消耗：2,966.45kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000947s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005555s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000505s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:52:09+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.089782s][吞吐率：11.14req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001167s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006781s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.009250s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.008517s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000682s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:08+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.030706s][吞吐率：32.57req/s] [内存消耗：1,908.50kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:08+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.034395s][吞吐率：29.07req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.034279s][吞吐率：29.17req/s] [内存消耗：2,044.46kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:10+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.076166s][吞吐率：13.13req/s] [内存消耗：3,045.03kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001223s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005932s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.008654s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.007968s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000706s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:11+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.104480s][吞吐率：9.57req/s] [内存消耗：2,966.45kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001635s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010129s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000846s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.066379s][吞吐率：15.06req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006558s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006114s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006366s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000546s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:35+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.034784s][吞吐率：28.75req/s] [内存消耗：2,044.48kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:36+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.067522s][吞吐率：14.81req/s] [内存消耗：3,045.03kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001040s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006181s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006292s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005819s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000605s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:37+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.063351s][吞吐率：15.79req/s] [内存消耗：2,966.45kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001101s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009126s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000520s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:53:38+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.067771s][吞吐率：14.76req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001016s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006936s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006234s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006744s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000547s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:54:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.030489s][吞吐率：32.80req/s] [内存消耗：2,044.48kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:54:11+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.070420s][吞吐率：14.20req/s] [内存消耗：3,045.03kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005810s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006652s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005656s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000505s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:54:15+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.065897s][吞吐率：15.18req/s] [内存消耗：2,966.45kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001358s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008440s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000812s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:54:17+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.064799s][吞吐率：15.43req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000975s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005814s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006528s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005588s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000425s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:54:17+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.066995s][吞吐率：14.93req/s] [内存消耗：3,039.89kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001045s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006378s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006092s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,1,1,3) [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006034s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,8,8,1) [ RunTime:0.000515s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:55:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index
+[ log ] z.cn/admin/index [运行时间：0.035547s][吞吐率：28.13req/s] [内存消耗：1,908.50kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:55:57+08:00 ] 127.0.0.1 127.0.0.1 GET /welcome
+[ log ] z.cn/welcome [运行时间：0.041547s][吞吐率：24.07req/s] [内存消耗：1,886.02kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:55:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/cateAll
+[ log ] z.cn/admin/cateAll [运行时间：0.031659s][吞吐率：31.59req/s] [内存消耗：1,907.70kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:55:59+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/category/adminGetCate
+[ log ] z.cn/api/v1/category/adminGetCate [运行时间：0.064951s][吞吐率：15.40req/s] [内存消耗：2,985.54kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005292s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.006845s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (0,0,0,0,0,0,0,0,0,0) [ RunTime:0.000398s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:56:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/productAll
+[ log ] z.cn/admin/productAll [运行时间：0.033332s][吞吐率：30.00req/s] [内存消耗：1,903.78kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:56:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.092142s][吞吐率：10.85req/s] [内存消耗：3,045.03kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001883s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010843s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 0,15 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007194s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.014974s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1,1,1,1,1,1,1,1,1,1,1) [ RunTime:0.000462s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:56:01+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.181136s][吞吐率：5.52req/s] [内存消耗：2,966.04kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001355s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.022276s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.012789s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:56:03+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetProducts
+[ log ] z.cn/api/v1/product/adminGetProducts [运行时间：0.086994s][吞吐率：11.50req/s] [内存消耗：3,038.56kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001038s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009225s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL LIMIT 15,15 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007376s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (3,3,3,3,3) [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.007439s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1,1,1,1) [ RunTime:0.000578s ]
+
+---------------------------------------------------------------
+[ 2019-11-26T15:56:04+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/product/adminGetCount
+[ log ] z.cn/api/v1/product/adminGetCount [运行时间：0.111964s][吞吐率：8.93req/s] [内存消耗：2,966.04kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001348s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.041357s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL [ RunTime:0.000760s ]
+
+---------------------------------------------------------------

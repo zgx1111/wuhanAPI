@@ -1,0 +1,314 @@
+[ 2020-01-26T12:48:58+08:00 ] [ error ] module not exists:xmlrpc.php
+
+---------------------------------------------------------------
+[ 2020-01-26T16:54:43+08:00 ] [ error ] module not exists:assets
+
+---------------------------------------------------------------
+[ 2020-01-26T16:54:46+08:00 ] [ error ] module not exists:assets
+
+---------------------------------------------------------------
+[ 2020-01-26T16:54:49+08:00 ] [ error ] module not exists:assets
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.003749s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.002178s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000295s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000617s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.005646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1055,1058,1057,1060) [ RunTime:0.000260s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.031883s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.003850s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000273s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.009498s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `category` LIMIT 12 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.004636s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1909,1911,1910,3095,2886,1915,1914,2263,1917,3096,2257,3089) [ RunTime:0.000325s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.010482s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000420s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004697s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.004059s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005625s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1055,1058,1057,1060) [ RunTime:0.000236s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000585s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5W9qL3ZdEZOniiWznaRaU2Q' LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`openid`) VALUES ('oPweb5W9qL3ZdEZOniiWznaRaU2Q') [ RunTime:0.005951s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000683s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5W9qL3ZdEZOniiWznaRaU2Q' LIMIT 1 [ RunTime:0.000331s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5W9qL3ZdEZOniiWznaRaU2Q' LIMIT 1 [ RunTime:0.000233s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5W9qL3ZdEZOniiWznaRaU2Q' LIMIT 1 [ RunTime:0.000870s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004431s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oPweb5W9qL3ZdEZOniiWznaRaU2Q' LIMIT 1 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 6  AND `category_id` <> 11 ORDER BY create_time desc LIMIT 10 [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (606,605,604,603,602,601,600,599,598,595) [ RunTime:0.001929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (3474,3475,3476,3477,3478,3479,3480,3481,3482,3483,3484,3485,3486,3487,3523,3524,3525,3526,3527,3528,3529,3530,3531,3532,3533,3534,3535,3536,3537,0,3538,3539,3540,3541,3542,3562,3563,3564,3565,3566,3567,0,3572,3573,3574,3576,3577,3578,0,3580,3581,3582,3583,3584,3585,3586,3588,3589,3590,3591,3592,3593,3594,3595,3596,3597,3598,3599,3601,3603,3605,3607,3608,3609,3610,3611,3612,3613,3614,3615,3616,3620,3621,3622,3623,3624,3625,3626,3627,3628,3629,3630,3631,3632) [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (606,605,604,603,602,601,600,599,598,595) [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (3471,3472,3473,3519,3520,3521,3522,3560,3561,3568,3575,3579,3587,3602,3604,3606,3617,3618,3619) [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 606 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 605 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 604 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 603 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 602 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 601 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 600 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 599 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 598 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 595 LIMIT 1 [ RunTime:0.000183s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 6 ORDER BY sales Desc LIMIT 10 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (46,173,60,47,606,192,36,274,602,196) [ RunTime:0.002154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (436,437,438,439,440,441,442,443,444,445,446,1759,1760,1761,1762,1763,1764,1765,1766,1767,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2590,2591,2592,2593,2594,2595,2596,2597,2598,2599,2600,2601,2602,2603,2830,2831,2832,2833,2834,2835,2836,2837,2838,2839,2840,2841,2842,2843,2844,2845,2846,2847,2848,2849,2850,2851,3198,3199,3200,3201,3202,3203,3204,3269,3270,3271,3272,3273,3274,3275,3580,3581,3582,3583,3584,3585,3586,3620,3621,3622,3623,3624,3625,3626,3627,3628,3629,3630,3631,3632) [ RunTime:0.001202s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (46,173,60,47,606,192,36,274,602,196) [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1636,1637,1638,1647,1648,1649,1650,1756,1757,1758,2553,2554,2555,2587,2588,2589,2827,2828,2829,3195,3196,3197,3579,3617,3618,3619) [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 46 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 173 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 60 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 47 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 606 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 192 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 36 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 274 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 602 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 196 LIMIT 1 [ RunTime:0.000183s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 6  AND `category_id` <> 11 ORDER BY create_time desc LIMIT 10 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (606,605,604,603,602,601,600,599,598,595) [ RunTime:0.001993s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (3474,3475,3476,3477,3478,3479,3480,3481,3482,3483,3484,3485,3486,3487,3523,3524,3525,3526,3527,3528,3529,3530,3531,3532,3533,3534,3535,3536,3537,0,3538,3539,3540,3541,3542,3562,3563,3564,3565,3566,3567,0,3572,3573,3574,3576,3577,3578,0,3580,3581,3582,3583,3584,3585,3586,3588,3589,3590,3591,3592,3593,3594,3595,3596,3597,3598,3599,3601,3603,3605,3607,3608,3609,3610,3611,3612,3613,3614,3615,3616,3620,3621,3622,3623,3624,3625,3626,3627,3628,3629,3630,3631,3632) [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (606,605,604,603,602,601,600,599,598,595) [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (3471,3472,3473,3519,3520,3521,3522,3560,3561,3568,3575,3579,3587,3602,3604,3606,3617,3618,3619) [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 606 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 605 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 604 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 603 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 602 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 601 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 600 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 599 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 598 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 595 LIMIT 1 [ RunTime:0.000199s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.001056s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 6 ORDER BY sales Desc LIMIT 10 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (46,173,60,47,606,192,36,274,602,196) [ RunTime:0.002165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (436,437,438,439,440,441,442,443,444,445,446,1759,1760,1761,1762,1763,1764,1765,1766,1767,2556,2557,2558,2559,2560,2561,2562,2563,2564,2565,2566,2567,2568,2569,2570,2571,2572,2590,2591,2592,2593,2594,2595,2596,2597,2598,2599,2600,2601,2602,2603,2830,2831,2832,2833,2834,2835,2836,2837,2838,2839,2840,2841,2842,2843,2844,2845,2846,2847,2848,2849,2850,2851,3198,3199,3200,3201,3202,3203,3204,3269,3270,3271,3272,3273,3274,3275,3580,3581,3582,3583,3584,3585,3586,3620,3621,3622,3623,3624,3625,3626,3627,3628,3629,3630,3631,3632) [ RunTime:0.000988s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (46,173,60,47,606,192,36,274,602,196) [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1636,1637,1638,1647,1648,1649,1650,1756,1757,1758,2553,2554,2555,2587,2588,2589,2827,2828,2829,3195,3196,3197,3579,3617,3618,3619) [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 46 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 173 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 60 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 47 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 606 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 192 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 36 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 274 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 602 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 196 LIMIT 1 [ RunTime:0.000211s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:36+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000690s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000364s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:36+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1909,1911,1910,3095,2886,1915,1914,2263,1917,3096,2257,3089,3090) [ RunTime:0.000553s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:36+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000595s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1909,1911,1910,3095,2886,1915,1914,2263,1917,3096,2257,3089,3090) [ RunTime:0.000266s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:36+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000579s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `category_id` = 11  AND `storehouse_id` = 6 [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (274,284,555) [ RunTime:0.001099s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1759,1760,1761,1762,1763,1764,1765,1766,1767,1883,1884,1885,1886,2253,2254,2255,2256) [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (274,284,555) [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1756,1757,1758,1882,2252) [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 274 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 284 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 555 LIMIT 1 [ RunTime:0.000162s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000533s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `category_id` = 1  AND `storehouse_id` = 6 [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` IN (125,127,129,141,216,218,219,220,221,222,223,224,225,226,227,229,232,272,275,278,279,280,282,589) [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (796,797,798,799,800,801,802,803,805,806,807,808,809,810,811,812,813,817,818,819,827,828,829,835,836,837,838,839,840,841,842,843,845,853,854,855,856,857,858,860,861,862,863,864,865,866,867,869,870,871,872,873,874,875,876,877,878,879,890,891,892,893,894,895,896,897,899,900,901,902,903,904,906,934,935,936,937,946,947,948,949,950,951,952,953,954,955,956,957,958,1732,1733,1734,1735,1736,1737,1771,1772,1773,1774,1775,1776,1777,1778,1779,1780,1781,1793,1794,1795,1796,1797,1798,1799,1801,1802,1803,1804,1807,1808,1809,1859,1860,1861,1862,1863,1864,1865,1866,1867,1868,1869,1870,1871,1872,1873,2039,2040,2044,2045,2046,2047,2048,2049,2050,2051,2052,2053,2054,2055,2056,2057,2070,2071,2072,2073,2074,2075,2076,2077,2078,2079,2080,2081,2082,2083,2084,2085,2086,2087,2090,2091,2092,2093,2094,2095,2096,2097,2098,2099,2100,2101,2102,2103,2104,2105,2106,2107,2108,2109,2110,2111,2112,2113,2114,2115,2116,2117,2118,2119,2120,2121,2122,2123,2124,2125,2126,2136,2137,2138,2139,2140,2141,2142,2143,2144,2145,3362,3363,3364,3365,3366,3367,3368,3369,3370,3371,3372,3373,3374,3375,3376) [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` IN (125,127,129,141,216,218,219,220,221,222,223,224,225,226,227,229,232,272,275,278,279,280,282,589) [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1450,1451,1453,1454,1455,1458,1462,1463,1464,1465,1468,1469,1471,1729,1730,1768,1769,1770,1791,1792,1800,1806,1857,1858,2037,2038,2042,2043,2068,2069,2088,2089,2128,2129,2130,2131,2132,2133,2134,2135,2146,2147,2148,2869,3361) [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 125 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 127 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 129 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 141 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 216 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 218 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 219 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 220 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 221 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 222 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 223 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 224 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 225 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 226 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 227 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 229 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 232 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 272 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 275 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 278 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 279 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 280 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 282 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 589 LIMIT 1 [ RunTime:0.000163s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000657s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1909,1911,1910,3095,2886,1915,1914,2263,1917,3096,2257,3089,3090) [ RunTime:0.000364s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000621s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `id` = 284 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 284 [ RunTime:0.001602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1883,1884,1885,1886) [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` = 284 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1882) [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 284 LIMIT 1 [ RunTime:0.000182s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000543s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000271s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002022s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1909,1911,1910,3095,2886,1915,1914,2263,1917,3096,2257,3089,3090) [ RunTime:0.000354s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000754s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `id` = 284 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 284 [ RunTime:0.001693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1883,1884,1885,1886) [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_main_image` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `product_main_image` WHERE  `product_id` = 284 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1882) [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_products` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `user_products` WHERE  `user_id` = 355  AND `product_id` = 284 LIMIT 1 [ RunTime:0.000198s ]
+
+---------------------------------------------------------------
+[ 2020-01-26T17:19:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000508s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000305s ]
+
+---------------------------------------------------------------

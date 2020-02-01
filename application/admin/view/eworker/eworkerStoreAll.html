@@ -1,0 +1,153 @@
+<!--_meta 作为公共模版分离出去-->
+{include file='eworker/_meta'}
+<!--/meta 作为公共模版分离出去-->
+
+<link href="__STATIC__/hadmin/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    .page{
+        text-align: center;
+    }
+
+</style>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span>推广员<span class="c-gray en">&gt;</span>门店<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="cl pd-5 bg-1 bk-gray mt-20"><span class="r">共有数据：<strong></strong> 条</span> </div>
+<div class="page-container">
+    <div class="mt-20">
+        <table class="table table-border table-bordered table-bg table-hover table-responsive">
+            <thead>
+            <tr class="text-c">
+                <th>ID</th>
+                <th>名字</th>
+                <th>所属城市</th>
+                <th>所属供货仓</th>
+                <th>详细地址</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+        <!--分页部分-->
+        <div class="page"></div>
+
+    </div>
+</div>
+</body>
+<!--_footer 作为公共模版分离出去-->
+{include file='public/_footer'}
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__STATIC__/hadmin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script src="__STATIC__/js/common.js"></script>
+<script type="text/javascript">
+    //是否获取token令牌，如果没有获取，就要返回登陆界面
+    if(!window.base.getLocalStorage('eworkerToken')){
+        window.location.href = '/yxeworker';
+    }
+    //alert(window.base.getLocalStorage('token'));
+    getDatas(1);
+    //获得数据
+    function getDatas(page){
+        //默认第一页
+        //读取令牌
+        //var token = window.base.getLocalStorage('token');
+        //alert(token);
+        var params={
+            url:'/store/getEworkerStore',
+            data:{'page':page},
+            tokenFlag:true,
+            type:'post',
+            sCallback:function(res) {
+                if(res == 0){
+                    layer.alert('无数据');
+                }else{
+                    //拼接字符串
+                    var str = getStoreHtmlStr(res);
+                    $('tbody').html(str);
+                    getCount(page);
+                }
+
+            },
+            eCallback:function(res){
+                alert('请求错误');
+            }
+        };
+        window.base.getEworkerData(params);
+    }
+    //拼接字符串
+    function getStoreHtmlStr(res){
+        var data = res;
+        if (data){
+            var len = data.length,str = '', item;
+            if(len>0) {
+                for (var i = 0; i < len; i++) {
+                    item = data[i];
+                    str += '<tr class="text-c">' +
+                        '<td>' + item.id + '</td>' +
+                        '<td>' + item.truename + '</td>' +
+                        '<td>' + item.city.name + '</td>' +
+                        '<td>' + item.storehouse.truename + '</td>' +
+                        '<td>' + item.state + '</td>' +
+                        '<td width="100px"><button class="btn btn-success" onclick="selStoreOrder('+item.id+')">查看门店订单</button></td>' +
+                        '</tr>';
+                }
+            }
+            return str;
+        }
+        return '';
+    }
+
+    //分页
+    function setPage(count,nowPage){
+        var sum = parseInt(count/15)+1;
+        var str='<p>共 '+sum+' 页</p>'
+        last = nowPage-1;
+        next = nowPage+1;
+        if(last<1){
+            last=1;
+        }
+        if(next>sum){
+            next=sum;
+        }
+        str += '<a class="btn btn-default" onclick="getDatas('+last+')">上一页</a>';
+        str += '<span class="btn btn-primary radius">'+nowPage+'</span>';
+        str += '<a class="btn btn-default" onclick="getDatas('+next+')">下一页</a>';
+
+        $('.page').html(str);
+    }
+    //获得名下门店总数
+    function getCount(nowPage){
+        var params={
+            url:'/store/getEworkerStoreCount',
+            data:{},
+            tokenFlag:true,
+            type:'post',
+            sCallback:function(res) {
+                $('strong').html(res);
+                setPage(res,nowPage);
+            },
+            eCallback:function(res){
+                layer.alert('请重新登陆');
+            }
+        };
+        window.base.getEworkerData(params);
+    }
+    //查看门店订单
+    function selStoreOrder(id){
+        //alert(id);
+        window.location.href = 'eworkerGetStoreOrder?id='+id;
+    }
+
+</script>

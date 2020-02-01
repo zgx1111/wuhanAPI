@@ -1,0 +1,247 @@
+[ 2019-11-05T14:31:40+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.009758s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  `username` = '123'  AND `password` = '123' LIMIT 1 [ RunTime:0.000548s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:31:47+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001572s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005083s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 LIMIT 0,15 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005415s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (5,2,6,2,5,3,2,2,2,2,2,7,7,7,3) [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:31:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001581s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005843s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 [ RunTime:0.000493s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:31:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001496s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005744s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `storehouse_id` = 1 ORDER BY create_time desc LIMIT 0,15 [ RunTime:0.000554s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:31:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001441s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005950s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `storehouse_id` = 1 [ RunTime:0.000477s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:34:46+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:37:29+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:37:48+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:37:50+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:39:18+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:39:20+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:39:21+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:39:21+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:00+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:10+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:11+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:11+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:12+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:12+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:14+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:15+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:15+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:40:36+08:00 ] [ error ] controller not exists:V1
+
+---------------------------------------------------------------
+[ 2019-11-05T14:41:14+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:41:15+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:41:49+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:41:56+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:41:58+08:00 ] [ error ] module not exists:yxadult
+
+---------------------------------------------------------------
+[ 2019-11-05T14:47:13+08:00 ] [ error ] array (
+  'appid' => 'wx3034edcbe708b2d9',
+  'err_code' => 'INVALID_REQUEST',
+  'err_code_des' => '201 商户订单号重复',
+  'mch_id' => '1520713931',
+  'nonce_str' => 'Yzpwi7ybZmFLzB8X',
+  'result_code' => 'FAIL',
+  'return_code' => 'SUCCESS',
+  'return_msg' => 'OK',
+  'sign' => '0F50F9EFD349164F821EA46CB9163630',
+)
+[ error ] 获取预支付订单失败
+[ error ] [8]未定义数组索引: prepay_id
+[ error ] Undefined index: prepay_id
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002523s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.009163s ]
+[ sql ] [ SQL ] SELECT * FROM `city` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.004795s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `city_id` IN ('2','1','5','3','4') [ RunTime:0.000310s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:14+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001864s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008829s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.007047s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000557s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:14+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002203s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.027993s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `truename` = '=' LIMIT 1 [ RunTime:0.006466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.011676s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.010136s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021141s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.005609s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:14+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002147s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007186s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `truename` = '上海一店' LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006906s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 ORDER BY create_time desc LIMIT 15 [ RunTime:0.000745s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002172s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.008982s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008869s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.002598s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002426s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.016770s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `truename` = '上海一店' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010758s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `category_id` = 2  AND `storehouse_id` = 1 [ RunTime:0.000589s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:23+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002686s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011278s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `id` = 12 LIMIT 1 [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_image` [ RunTime:0.010545s ]
+[ sql ] [ SQL ] SELECT * FROM `product_image` WHERE  `product_id` = 12 ORDER BY `order`  asc [ RunTime:0.003282s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001837s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.009915s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 [ RunTime:0.000412s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.004375s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.008112s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 [ RunTime:0.000452s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:34+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001388s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005335s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `truename` = '上海一店' LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `id` FROM `store` WHERE  `truename` = '上海一店' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006488s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `id` IN (12)  AND `storehouse_id` = 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.005231s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005255s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items` , `store_id` , `storehouse_id` , `update_time` , `create_time`) VALUES (2 , 'AB05365143848953' , 0.03 , 3 , 'https://yxadult.xyz/images/product-dryfruit@7.png' , '珍奇异果 3个等' , '{\"name\":\"\\u627e\",\"phone\":\"15098767896\",\"store\":\"\\u4e0a\\u6d77\\u4e00\\u5e97\",\"address\":\"\",\"create_time\":\"2019-10-31 11:30:26\",\"update_time\":\"2019-10-31 11:30:26\"}' , '[{\"id\":12,\"haveStock\":true,\"counts\":3,\"price\":\"0.01\",\"name\":\"\\u73cd\\u5947\\u5f02\\u679c 3\\u4e2a\",\"totalPrice\":0.03,\"main_img_url\":\"https:\\/\\/yxadult.xyz\\/images\\/product-dryfruit@7.png\"}]' , 2 , 1 , 1572936514 , 1572936514) [ RunTime:0.001626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.007494s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (12 , 3 , 5) [ RunTime:0.000349s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:48:35+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001331s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005077s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `truename` = '上海一店' LIMIT 1 [ RunTime:0.002496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.008268s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.008032s ]
+[ sql ] [ SQL ] SELECT * FROM `order_product` WHERE  `order_id` = 5 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005458s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `id` IN (12)  AND `storehouse_id` = 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] UPDATE `order`  SET `prepay_id`='wx0514492785755140f925f5301774677200'  WHERE  `id` = 5 [ RunTime:0.005276s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:49:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001423s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005283s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `truename` = '上海一店' LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006152s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.006083s ]
+[ sql ] [ SQL ] SELECT * FROM `order_product` WHERE  `order_id` = 5 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006364s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `id` IN (12)  AND `storehouse_id` = 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] UPDATE `order`  SET `prepay_id`='wx0514495908109840f925f5301675101000'  WHERE  `id` = 5 [ RunTime:0.005084s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:49:58+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002048s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 [ RunTime:0.000629s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T14:49:58+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.001470s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005309s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000420s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T15:00:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002007s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006045s ]
+[ sql ] [ SQL ] SELECT `storehouse_id` FROM `store` WHERE  `truename` = '上海一店' LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005558s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.005532s ]
+[ sql ] [ SQL ] SELECT * FROM `order_product` WHERE  `order_id` = 5 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005626s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `id` IN (12)  AND `storehouse_id` = 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] UPDATE `order`  SET `prepay_id`='wx0515012495629140f925f5301657355200'  WHERE  `id` = 5 [ RunTime:0.004045s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T15:01:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002275s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.011932s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 2 [ RunTime:0.000475s ]
+
+---------------------------------------------------------------
+[ 2019-11-05T15:01:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002723s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.011036s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000866s ]
+
+---------------------------------------------------------------

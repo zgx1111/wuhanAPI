@@ -1,0 +1,1433 @@
+[ 2019-11-14T10:57:20+08:00 ] 127.0.0.1 127.0.0.1 GET /Wechat/public/
+[ log ] yxadult.cn/Wechat/public/ [运行时间：0.045786s][吞吐率：21.84req/s] [内存消耗：1,856.05kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T10:59:23+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store?username=123&password=123
+[ log ] yxadult.cn/api/v1/store?username=123&password=123 [运行时间：0.060938s][吞吐率：16.41req/s] [内存消耗：2,944.73kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001678s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006212s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `username` = 123  AND `password` = '123' LIMIT 1 [ RunTime:0.000671s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T10:59:39+08:00 ] 127.0.0.1 127.0.0.1 GET /Wechat/public/
+[ log ] yxadult.cn/Wechat/public/ [运行时间：0.029193s][吞吐率：34.25req/s] [内存消耗：1,856.27kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T10:59:42+08:00 ] 127.0.0.1 127.0.0.1 GET /Wechat/public/
+[ log ] yxadult.cn/Wechat/public/ [运行时间：0.029702s][吞吐率：33.67req/s] [内存消耗：1,856.27kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T11:01:40+08:00 ] ::1 ::1 GET /
+[ log ] localhost/ [运行时间：0.034181s][吞吐率：29.26req/s] [内存消耗：1,841.54kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T11:01:48+08:00 ] ::1 ::1 POST /api/v1/store
+[ log ] localhost/api/v1/store [运行时间：0.054316s][吞吐率：18.41req/s] [内存消耗：2,944.59kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001080s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005907s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `username` = 123  AND `password` = '123' LIMIT 1 [ RunTime:0.000566s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T11:01:48+08:00 ] ::1 ::1 GET /store/index
+[ log ] localhost/store/index [运行时间：0.030544s][吞吐率：32.74req/s] [内存消耗：1,843.35kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T11:01:48+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.038015s][吞吐率：26.31req/s] [内存消耗：1,833.74kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T11:01:56+08:00 ] ::1 ::1 GET /store/info
+[ log ] localhost/store/info [运行时间：0.026199s][吞吐率：38.17req/s] [内存消耗：1,842.95kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T11:01:56+08:00 ] ::1 ::1 POST /api/v1/store/info
+[ log ] localhost/api/v1/store/info [运行时间：0.069399s][吞吐率：14.41req/s] [内存消耗：3,040.16kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000975s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005384s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` = 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.005401s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `id` = 1 [ RunTime:0.000386s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T13:52:25+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store?username=123&password=123
+[ log ] yxadult.cn/api/v1/store?username=123&password=123 [运行时间：0.060181s][吞吐率：16.62req/s] [内存消耗：2,876.73kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001304s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007226s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `username` = 123  AND `password` = '123' LIMIT 1 [ RunTime:0.000614s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:20:19+08:00 ] 127.0.0.1 127.0.0.1 GET /yxadult/public/
+[ log ] yxadult.cn/yxadult/public/ [运行时间：0.037530s][吞吐率：26.65req/s] [内存消耗：1,997.05kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:20:39+08:00 ] ::1 ::1 GET /
+[ log ] localhost/ [运行时间：0.038530s][吞吐率：25.95req/s] [内存消耗：1,842.14kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:20:50+08:00 ] ::1 ::1 GET /yxstorehouse
+[ log ] localhost/yxstorehouse [运行时间：0.040138s][吞吐率：24.91req/s] [内存消耗：1,983.74kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:21:29+08:00 ] ::1 ::1 GET /yxstorehouse
+[ log ] localhost/yxstorehouse [运行时间：0.045064s][吞吐率：22.19req/s] [内存消耗：1,843.28kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:21:34+08:00 ] ::1 ::1 POST /api/v1/storehouse
+[ log ] localhost/api/v1/storehouse [运行时间：0.050208s][吞吐率：19.92req/s] [内存消耗：2,932.02kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001042s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005272s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  `storehouse`.`delete_time` IS NULL  AND `username` = '12'  AND `password` = '122' LIMIT 1 [ RunTime:0.000486s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:21:34+08:00 ] ::1 ::1 GET /storehouse/index
+[ log ] localhost/storehouse/index [运行时间：0.034635s][吞吐率：28.87req/s] [内存消耗：1,980.07kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:21:34+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.045324s][吞吐率：22.06req/s] [内存消耗：1,959.11kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:22:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.082858s][吞吐率：12.07req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006010s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000433s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:23:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.052900s][吞吐率：18.90req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001132s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005619s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000423s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:24:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.056157s][吞吐率：17.81req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005649s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000366s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:25:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.068138s][吞吐率：14.68req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001594s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005653s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000388s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:26:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.077728s][吞吐率：12.87req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001015s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005316s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000389s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:27:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.062084s][吞吐率：16.11req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011852s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005552s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000340s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:28:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.090057s][吞吐率：11.10req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001321s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.008200s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000489s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:29:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.076134s][吞吐率：13.13req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000996s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005706s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000461s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:30:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.089006s][吞吐率：11.24req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006252s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000436s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:31:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.062017s][吞吐率：16.12req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005680s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000437s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:32:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.067070s][吞吐率：14.91req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001012s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006784s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000542s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:33:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.070481s][吞吐率：14.19req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001111s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006105s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000412s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:34:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.084650s][吞吐率：11.81req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001018s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005337s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000396s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:35:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.081509s][吞吐率：12.27req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005459s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000399s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:36:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.072156s][吞吐率：13.86req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001170s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006257s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:37:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.065636s][吞吐率：15.24req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.007219s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000502s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:38:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.058421s][吞吐率：17.12req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000933s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006369s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000398s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:39:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.065418s][吞吐率：15.29req/s] [内存消耗：2,936.89kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005826s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000400s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:40:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.072639s][吞吐率：13.77req/s] [内存消耗：2,938.49kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001173s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.009148s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000340s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:41:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.079237s][吞吐率：12.62req/s] [内存消耗：2,938.03kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010615s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005013s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000390s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:42:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.110335s][吞吐率：9.06req/s] [内存消耗：2,938.03kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001571s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.009741s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000787s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:43:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.086490s][吞吐率：11.56req/s] [内存消耗：2,938.03kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001617s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.009480s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000637s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:44:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.066386s][吞吐率：15.06req/s] [内存消耗：2,938.03kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001028s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005777s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000456s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:45:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.118708s][吞吐率：8.42req/s] [内存消耗：2,938.03kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001567s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.010435s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000613s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:46:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.061706s][吞吐率：16.21req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000993s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005740s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000409s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:47:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.084564s][吞吐率：11.83req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001041s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005571s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000417s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:48:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.082530s][吞吐率：12.12req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001217s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006680s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:49:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.085770s][吞吐率：11.66req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005305s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000399s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:50:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.066596s][吞吐率：15.02req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001042s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005748s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000424s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:51:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.093635s][吞吐率：10.68req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001153s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006072s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000500s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:52:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.050379s][吞吐率：19.85req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001037s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005697s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000479s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:53:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.070651s][吞吐率：14.15req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001170s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006025s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000403s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:54:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.109429s][吞吐率：9.14req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001045s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006504s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000392s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:55:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.059398s][吞吐率：16.84req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001183s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006006s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000329s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:56:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.066475s][吞吐率：15.04req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001031s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005413s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000397s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:57:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.062558s][吞吐率：15.99req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001117s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005847s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000476s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:58:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.101103s][吞吐率：9.89req/s] [内存消耗：2,951.99kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001150s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.015594s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.004208s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T14:59:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.064234s][吞吐率：15.57req/s] [内存消耗：2,952.08kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001061s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005524s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000417s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:00:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.070161s][吞吐率：14.25req/s] [内存消耗：2,952.08kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001078s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005644s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000431s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:01:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.071572s][吞吐率：13.97req/s] [内存消耗：2,952.08kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001100s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.007109s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000417s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:02:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.069615s][吞吐率：14.36req/s] [内存消耗：2,952.08kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001300s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005890s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000473s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:03:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.086495s][吞吐率：11.56req/s] [内存消耗：2,952.08kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001031s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005411s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000416s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:04:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.064084s][吞吐率：15.60req/s] [内存消耗：2,952.08kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001034s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005194s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000445s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:05:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.065702s][吞吐率：15.22req/s] [内存消耗：2,952.70kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001058s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.005642s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000424s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:06:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.063817s][吞吐率：15.67req/s] [内存消耗：2,952.70kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006926s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000422s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:07:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.087597s][吞吐率：11.42req/s] [内存消耗：2,952.70kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001103s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006730s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000440s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:08:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.080272s][吞吐率：12.46req/s] [内存消耗：2,952.70kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001240s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006202s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000524s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:09:34+08:00 ] ::1 ::1 POST /api/v1/order/remind
+[ log ] localhost/api/v1/order/remind [运行时间：0.058511s][吞吐率：17.09req/s] [内存消耗：2,952.70kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000985s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `remind` [ RunTime:0.006120s ]
+[ sql ] [ SQL ] SELECT * FROM `remind` WHERE  `storehouse_id` = 1 [ RunTime:0.000495s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:09:49+08:00 ] ::1 ::1 GET /yxeworker
+[ log ] localhost/yxeworker [运行时间：0.036608s][吞吐率：27.32req/s] [内存消耗：1,999.07kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:12:24+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/eworker?username=123&password=123
+[ log ] yxadult.cn/api/v1/eworker?username=123&password=123 [运行时间：0.054315s][吞吐率：18.41req/s] [内存消耗：2,919.12kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000957s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.006544s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `username` = '123'  AND `password` = '123' LIMIT 1 [ RunTime:0.000480s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:12:29+08:00 ] ::1 ::1 GET /yxeworker
+[ log ] localhost/yxeworker [运行时间：0.033598s][吞吐率：29.76req/s] [内存消耗：1,858.81kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:12:32+08:00 ] ::1 ::1 POST /api/v1/eworker
+[ log ] localhost/api/v1/eworker [运行时间：0.045509s][吞吐率：21.97req/s] [内存消耗：2,918.98kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001004s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.005610s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `username` = '123'  AND `password` = '123' LIMIT 1 [ RunTime:0.000469s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:03+08:00 ] ::1 ::1 POST /api/v1/eworker
+[ log ] localhost/api/v1/eworker [运行时间：0.044010s][吞吐率：22.72req/s] [内存消耗：2,918.98kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000980s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.005870s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `username` = '123'  AND `password` = '123' LIMIT 1 [ RunTime:0.000436s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:40+08:00 ] ::1 ::1 GET /yxeworker
+[ log ] localhost/yxeworker [运行时间：0.039794s][吞吐率：25.13req/s] [内存消耗：1,999.29kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:43+08:00 ] ::1 ::1 POST /api/v1/eworker
+[ log ] localhost/api/v1/eworker [运行时间：0.050923s][吞吐率：19.64req/s] [内存消耗：2,918.98kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001067s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.005387s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `username` = '123'  AND `password` = '123' LIMIT 1 [ RunTime:0.000501s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:43+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.033757s][吞吐率：29.62req/s] [内存消耗：1,954.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:43+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.050153s][吞吐率：19.94req/s] [内存消耗：1,849.24kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:45+08:00 ] ::1 ::1 GET /store/productAll
+[ log ] localhost/store/productAll [运行时间：0.031992s][吞吐率：31.26req/s] [内存消耗：1,998.96kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:45+08:00 ] ::1 ::1 POST /api/v1/product/getproductsByStoreID
+[ log ] localhost/api/v1/product/getproductsByStoreID [运行时间：0.079899s][吞吐率：12.52req/s] [内存消耗：3,151.70kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001079s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006790s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006046s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 LIMIT 0,15 [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.006418s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000958s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:45+08:00 ] ::1 ::1 POST /api/v1/product/getProductCountByStoreID
+[ log ] localhost/api/v1/product/getProductCountByStoreID [运行时间：0.091395s][吞吐率：10.94req/s] [内存消耗：3,012.29kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000879s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.009629s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011493s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 [ RunTime:0.000501s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:53+08:00 ] ::1 ::1 GET /store/productAll
+[ log ] localhost/store/productAll [运行时间：0.027268s][吞吐率：36.67req/s] [内存消耗：1,858.80kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:54+08:00 ] ::1 ::1 POST /api/v1/product/getproductsByStoreID
+[ log ] localhost/api/v1/product/getproductsByStoreID [运行时间：0.092538s][吞吐率：10.81req/s] [内存消耗：3,151.70kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001616s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.009563s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010775s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 LIMIT 0,15 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.007754s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000452s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:13:54+08:00 ] ::1 ::1 POST /api/v1/product/getProductCountByStoreID
+[ log ] localhost/api/v1/product/getProductCountByStoreID [运行时间：0.079074s][吞吐率：12.65req/s] [内存消耗：3,012.29kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001251s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007770s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013200s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 [ RunTime:0.000621s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:37:40+08:00 ] ::1 ::1 GET /yxeworker
+[ log ] localhost/yxeworker [运行时间：0.044159s][吞吐率：22.65req/s] [内存消耗：1,858.61kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:37:43+08:00 ] ::1 ::1 POST /api/v1/eworker
+[ log ] localhost/api/v1/eworker [运行时间：0.050557s][吞吐率：19.78req/s] [内存消耗：2,918.98kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001049s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.005573s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `username` = '123'  AND `password` = '123' LIMIT 1 [ RunTime:0.000450s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:37:43+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.028722s][吞吐率：34.82req/s] [内存消耗：1,820.45kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:37:43+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.037135s][吞吐率：26.93req/s] [内存消耗：1,849.24kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:37:45+08:00 ] ::1 ::1 GET /store/productAll
+[ log ] localhost/store/productAll [运行时间：0.026034s][吞吐率：38.41req/s] [内存消耗：1,858.50kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:37:46+08:00 ] ::1 ::1 POST /api/v1/product/getproductsByStoreID
+[ log ] localhost/api/v1/product/getproductsByStoreID [运行时间：0.063919s][吞吐率：15.64req/s] [内存消耗：3,151.70kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001016s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005425s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.005522s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 LIMIT 0,15 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.005623s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IN (2,1,1,1,1,1,1,3,1,3,3,3,3,3,3) [ RunTime:0.000497s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T15:37:46+08:00 ] ::1 ::1 POST /api/v1/product/getProductCountByStoreID
+[ log ] localhost/api/v1/product/getProductCountByStoreID [运行时间：0.097475s][吞吐率：10.26req/s] [内存消耗：3,012.29kb] [文件加载：64]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003577s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007906s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `id` = 1 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.007637s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `product`.`delete_time` IS NULL  AND `storehouse_id` = 1 [ RunTime:0.000515s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:10:06+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.034095s][吞吐率：29.33req/s] [内存消耗：1,953.72kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:10:06+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.037536s][吞吐率：26.64req/s] [内存消耗：1,847.63kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:26:18+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.034278s][吞吐率：29.17req/s] [内存消耗：1,821.09kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:26:18+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.030623s][吞吐率：32.66req/s] [内存消耗：1,849.69kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:26:20+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.030800s][吞吐率：32.47req/s] [内存消耗：1,961.30kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:26:54+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store/getEworkerStore
+[ log ] yxadult.cn/api/v1/store/getEworkerStore [运行时间：0.062233s][吞吐率：16.07req/s] [内存消耗：2,967.09kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001244s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006039s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000522s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:27:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store/getEworkerStore
+[ log ] yxadult.cn/api/v1/store/getEworkerStore [运行时间：0.055785s][吞吐率：17.93req/s] [内存消耗：2,967.21kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001256s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005849s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000610s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:27:31+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.074819s][吞吐率：13.37req/s] [内存消耗：2,968.13kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001288s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007796s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000459s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:27:43+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store/getEworkerStore
+[ log ] yxadult.cn/api/v1/store/getEworkerStore [运行时间：0.056267s][吞吐率：17.77req/s] [内存消耗：2,966.80kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001298s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005679s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000404s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:32:45+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store/getEworkerStoreCount
+[ log ] yxadult.cn/api/v1/store/getEworkerStoreCount [运行时间：0.072961s][吞吐率：13.71req/s] [内存消耗：2,970.27kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010562s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006474s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000529s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:33:04+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store/getEworkerStore
+[ log ] yxadult.cn/api/v1/store/getEworkerStore [运行时间：0.065581s][吞吐率：15.25req/s] [内存消耗：2,970.13kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001292s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005842s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000520s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:33:53+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store/getEworkerStore
+[ log ] yxadult.cn/api/v1/store/getEworkerStore [运行时间：0.061344s][吞吐率：16.30req/s] [内存消耗：3,044.48kb] [文件加载：67]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001060s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006996s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005922s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000355s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:34:29+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/store/getEworkerStore
+[ log ] yxadult.cn/api/v1/store/getEworkerStore [运行时间：0.074498s][吞吐率：13.42req/s] [内存消耗：3,062.02kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006448s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.006599s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006329s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000383s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:36:08+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.031722s][吞吐率：31.52req/s] [内存消耗：1,823.15kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:36:08+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.037521s][吞吐率：26.65req/s] [内存消耗：1,851.74kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:36:09+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.030872s][吞吐率：32.39req/s] [内存消耗：1,963.35kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:36:11+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.088968s][吞吐率：11.24req/s] [内存消耗：3,062.94kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001253s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007387s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.006179s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005522s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000441s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:36:11+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.052380s][吞吐率：19.09req/s] [内存消耗：2,971.61kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000895s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.008302s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000373s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:22+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.071105s][吞吐率：14.06req/s] [内存消耗：3,062.94kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001047s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005835s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005295s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005752s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000479s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:22+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.048517s][吞吐率：20.61req/s] [内存消耗：2,971.61kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001319s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000499s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:22+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.070516s][吞吐率：14.18req/s] [内存消耗：3,062.94kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006217s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.006934s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005498s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000431s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:22+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.046243s][吞吐率：21.62req/s] [内存消耗：2,971.61kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005581s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000710s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:24+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.080167s][吞吐率：12.47req/s] [内存消耗：3,062.94kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000991s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.011959s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.006413s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005765s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000346s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:24+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.056774s][吞吐率：17.61req/s] [内存消耗：2,971.61kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006272s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000489s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:24+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.067600s][吞吐率：14.79req/s] [内存消耗：3,062.94kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001025s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006263s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005493s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006156s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000459s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:24+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.049000s][吞吐率：20.41req/s] [内存消耗：2,971.61kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001245s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006358s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000405s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:25+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.068930s][吞吐率：14.51req/s] [内存消耗：3,062.94kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001026s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005743s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.006961s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005357s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000419s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:37:25+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.046899s][吞吐率：21.32req/s] [内存消耗：2,971.61kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000911s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005554s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000377s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:38:18+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.026268s][吞吐率：38.07req/s] [内存消耗：1,823.05kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:38:19+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.078846s][吞吐率：12.68req/s] [内存消耗：3,063.34kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001049s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.008041s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005156s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.007807s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000507s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:38:19+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.048565s][吞吐率：20.59req/s] [内存消耗：2,972.02kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001088s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005375s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000478s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:45:44+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/eworker/info
+[ log ] yxadult.cn/api/v1/eworker/info [运行时间：0.034185s][吞吐率：29.25req/s] [内存消耗：1,933.91kb] [文件加载：50]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:46:08+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/eworker/info
+[ log ] yxadult.cn/api/v1/eworker/info [运行时间：0.056689s][吞吐率：17.64req/s] [内存消耗：2,906.18kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001427s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.007504s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000491s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:47:46+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.037086s][吞吐率：26.96req/s] [内存消耗：1,959.86kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:47:46+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.032708s][吞吐率：30.57req/s] [内存消耗：1,853.77kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:47:47+08:00 ] ::1 ::1 GET /eworker/info
+[ log ] localhost/eworker/info [运行时间：0.027529s][吞吐率：36.33req/s] [内存消耗：1,960.79kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:47:47+08:00 ] ::1 ::1 POST /api/v1/eworker/info
+[ log ] localhost/api/v1/eworker/info [运行时间：0.059008s][吞吐率：16.95req/s] [内存消耗：2,906.89kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001453s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.006341s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000376s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:47:56+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.029819s][吞吐率：33.54req/s] [内存消耗：1,965.38kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:47:57+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.075880s][吞吐率：13.18req/s] [内存消耗：3,065.38kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001133s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005881s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005615s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1) [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006253s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1) [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:47:57+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.048313s][吞吐率：20.70req/s] [内存消耗：2,974.05kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001103s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007047s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000443s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:57:34+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=1
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=1 [运行时间：0.054775s][吞吐率：18.26req/s] [内存消耗：2,906.33kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001126s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006101s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 1 LIMIT 0,15 [ RunTime:0.000444s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:57:51+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=2 [运行时间：0.054604s][吞吐率：18.31req/s] [内存消耗：2,914.84kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001187s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.007383s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000489s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:58:06+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=2 [运行时间：0.054555s][吞吐率：18.33req/s] [内存消耗：2,914.84kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001168s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006258s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000546s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T16:58:11+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=1
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=1 [运行时间：0.061054s][吞吐率：16.38req/s] [内存消耗：2,906.33kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001177s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006235s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 1 LIMIT 0,15 [ RunTime:0.000444s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:00:49+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrderCount?id=1
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrderCount?id=1 [运行时间：0.068826s][吞吐率：14.53req/s] [内存消耗：2,909.23kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.007457s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 1 [ RunTime:0.000510s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:00:53+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrderCount?id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrderCount?id=2 [运行时间：0.052867s][吞吐率：18.92req/s] [内存消耗：2,917.75kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001004s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006584s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 [ RunTime:0.000585s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:01:44+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.032317s][吞吐率：30.94req/s] [内存消耗：1,831.80kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:01:45+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.033066s][吞吐率：30.24req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:01:48+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.030278s][吞吐率：33.03req/s] [内存消耗：1,972.01kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:01:48+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.068921s][吞吐率：14.51req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007216s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005493s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005562s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000436s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:01:48+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.045885s][吞吐率：21.79req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001162s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005555s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000404s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:26+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.024608s][吞吐率：40.64req/s] [内存消耗：1,831.80kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:26+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.035537s][吞吐率：28.14req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:26+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.038201s][吞吐率：26.18req/s] [内存消耗：1,831.80kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:26+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.036213s][吞吐率：27.61req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:27+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.029694s][吞吐率：33.68req/s] [内存消耗：1,831.80kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:27+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.035704s][吞吐率：28.01req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:27+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.023595s][吞吐率：42.38req/s] [内存消耗：1,831.80kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:27+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.035786s][吞吐率：27.94req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:27+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.022960s][吞吐率：43.55req/s] [内存消耗：1,831.80kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:27+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.035463s][吞吐率：28.20req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:27+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.022434s][吞吐率：44.58req/s] [内存消耗：1,831.80kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:28+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.034704s][吞吐率：28.82req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:28+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.027690s][吞吐率：36.11req/s] [内存消耗：1,831.80kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:28+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.038337s][吞吐率：26.08req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:32+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.028991s][吞吐率：34.49req/s] [内存消耗：1,831.33kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:32+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.068928s][吞吐率：14.51req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000909s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005509s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005935s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005399s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000385s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:02:32+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.044855s][吞吐率：22.29req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.004959s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000340s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:01+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrderCount?id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrderCount?id=2 [运行时间：0.057634s][吞吐率：17.35req/s] [内存消耗：2,917.75kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001025s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006520s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 [ RunTime:0.000571s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:05+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.035525s][吞吐率：28.15req/s] [内存消耗：1,831.85kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:05+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.036305s][吞吐率：27.54req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:07+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.025981s][吞吐率：38.49req/s] [内存消耗：1,831.38kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:07+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.093695s][吞吐率：10.67req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012429s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005545s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.006141s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005446s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000435s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:07+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.046400s][吞吐率：21.55req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000991s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005599s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000440s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:48+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.031857s][吞吐率：31.39req/s] [内存消耗：1,831.85kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:48+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.038091s][吞吐率：26.25req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:48+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.030766s][吞吐率：32.50req/s] [内存消耗：1,831.85kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:48+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.038825s][吞吐率：25.76req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:49+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.033472s][吞吐率：29.88req/s] [内存消耗：1,972.05kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:49+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.073443s][吞吐率：13.62req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005561s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005527s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005137s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000391s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:49+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.050976s][吞吐率：19.62req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001021s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005767s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000356s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:53+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.029843s][吞吐率：33.51req/s] [内存消耗：1,831.85kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:53+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.036017s][吞吐率：27.76req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:54+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.030531s][吞吐率：32.75req/s] [内存消耗：1,831.38kb] [文件加载：44]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:54+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.074251s][吞吐率：13.47req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005409s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005195s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006103s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000352s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:04:54+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.049735s][吞吐率：20.11req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001003s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005197s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000484s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:01+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.031900s][吞吐率：31.35req/s] [内存消耗：1,870.43kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:02+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.036269s][吞吐率：27.57req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:03+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.026357s][吞吐率：37.94req/s] [内存消耗：1,869.95kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:03+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.076594s][吞吐率：13.06req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000898s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005320s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005008s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005883s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000479s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:03+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.049971s][吞吐率：20.01req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000896s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.004859s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000499s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:06+08:00 ] ::1 ::1 GET /eworker/eworkerGetStoreOrder?id=1
+[ log ] localhost/eworker/eworkerGetStoreOrder?id=1 [运行时间：0.034263s][吞吐率：29.19req/s] [内存消耗：2,015.95kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:07+08:00 ] ::1 ::1 POST /api/v1/order/eworkerGetStoreOrder
+[ log ] localhost/api/v1/order/eworkerGetStoreOrder [运行时间：0.053836s][吞吐率：18.57req/s] [内存消耗：2,909.63kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000975s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005240s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 1 LIMIT 0,15 [ RunTime:0.000437s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:09+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.029418s][吞吐率：33.99req/s] [内存消耗：1,870.26kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:09+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.073140s][吞吐率：13.67req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001366s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.008967s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.007322s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006213s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000573s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:09+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.055660s][吞吐率：17.97req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001078s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005239s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000357s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:11+08:00 ] ::1 ::1 GET /eworker/eworkerGetStoreOrder?id=2
+[ log ] localhost/eworker/eworkerGetStoreOrder?id=2 [运行时间：0.034056s][吞吐率：29.36req/s] [内存消耗：1,875.52kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:11+08:00 ] ::1 ::1 POST /api/v1/order/eworkerGetStoreOrder
+[ log ] localhost/api/v1/order/eworkerGetStoreOrder [运行时间：0.052334s][吞吐率：19.11req/s] [内存消耗：2,918.14kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001688s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005524s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000379s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:16+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.027641s][吞吐率：36.18req/s] [内存消耗：1,870.43kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:16+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.043657s][吞吐率：22.91req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:18+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.033561s][吞吐率：29.80req/s] [内存消耗：1,869.95kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:18+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.101518s][吞吐率：9.85req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001918s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.007530s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.006043s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.007709s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000513s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:18+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.063347s][吞吐率：15.79req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001997s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005813s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000946s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:20+08:00 ] ::1 ::1 GET /eworker/eworkerGetStoreOrder?id=2
+[ log ] localhost/eworker/eworkerGetStoreOrder?id=2 [运行时间：0.034742s][吞吐率：28.78req/s] [内存消耗：1,875.52kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:06:20+08:00 ] ::1 ::1 POST /api/v1/order/eworkerGetStoreOrder
+[ log ] localhost/api/v1/order/eworkerGetStoreOrder [运行时间：0.062796s][吞吐率：15.92req/s] [内存消耗：2,918.14kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006024s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000473s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:07:10+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=2 [运行时间：0.054090s][吞吐率：18.49req/s] [内存消耗：2,917.73kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001107s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005982s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000716s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:08:07+08:00 ] ::1 ::1 GET /eworker/eworkerGetStoreOrder?id=2
+[ log ] localhost/eworker/eworkerGetStoreOrder?id=2 [运行时间：0.028250s][吞吐率：35.40req/s] [内存消耗：1,875.52kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:08:08+08:00 ] ::1 ::1 POST /api/v1/order/eworkerGetStoreOrder
+[ log ] localhost/api/v1/order/eworkerGetStoreOrder [运行时间：0.077654s][吞吐率：12.88req/s] [内存消耗：2,918.27kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001137s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.012639s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000979s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:08:16+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=2 [运行时间：0.058042s][吞吐率：17.23req/s] [内存消耗：2,917.85kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001148s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006745s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000551s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:09:06+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=2 [运行时间：0.057653s][吞吐率：17.35req/s] [内存消耗：2,917.85kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001250s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005802s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000589s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:09:25+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=2 [运行时间：0.059355s][吞吐率：16.85req/s] [内存消耗：2,918.29kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001461s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006883s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000609s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:10:38+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/order/eworkerGetStoreOrder?page=1&id=2
+[ log ] yxadult.cn/api/v1/order/eworkerGetStoreOrder?page=1&id=2 [运行时间：0.067507s][吞吐率：14.81req/s] [内存消耗：2,996.52kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001131s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.006067s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005617s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  ( `store`.`delete_time` IS NULL AND `store`.`delete_time` IS NULL )  AND `id` IN (2,2,2,2,2,2,2) [ RunTime:0.000539s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:10+08:00 ] ::1 ::1 GET /eworker/eworkerGetStoreOrder?id=2
+[ log ] localhost/eworker/eworkerGetStoreOrder?id=2 [运行时间：0.031586s][吞吐率：31.66req/s] [内存消耗：2,012.18kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:10+08:00 ] ::1 ::1 POST /api/v1/order/eworkerGetStoreOrder
+[ log ] localhost/api/v1/order/eworkerGetStoreOrder [运行时间：0.066122s][吞吐率：15.12req/s] [内存消耗：2,918.14kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001420s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.007658s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000621s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:10+08:00 ] ::1 ::1 POST /api/v1/order/eworkerGetStoreOrderCount
+[ log ] localhost/api/v1/order/eworkerGetStoreOrderCount [运行时间：0.070768s][吞吐率：14.13req/s] [内存消耗：2,918.20kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001973s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.013436s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 [ RunTime:0.000523s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:17+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.032853s][吞吐率：30.44req/s] [内存消耗：1,870.43kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:17+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.039223s][吞吐率：25.50req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:18+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.029639s][吞吐率：33.74req/s] [内存消耗：1,869.95kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:18+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.072925s][吞吐率：13.71req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001151s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006101s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005222s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005060s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000513s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:18+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.049431s][吞吐率：20.23req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001274s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005634s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000497s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:21+08:00 ] ::1 ::1 GET /eworker/eworkerGetStoreOrder?id=2
+[ log ] localhost/eworker/eworkerGetStoreOrder?id=2 [运行时间：0.034666s][吞吐率：28.85req/s] [内存消耗：1,871.52kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:21+08:00 ] ::1 ::1 POST /api/v1/order/eworkerGetStoreOrder
+[ log ] localhost/api/v1/order/eworkerGetStoreOrder [运行时间：0.056550s][吞吐率：17.68req/s] [内存消耗：2,918.14kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000924s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.007610s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 LIMIT 0,15 [ RunTime:0.000487s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:21+08:00 ] ::1 ::1 POST /api/v1/order/eworkerGetStoreOrderCount
+[ log ] localhost/api/v1/order/eworkerGetStoreOrderCount [运行时间：0.049387s][吞吐率：20.25req/s] [内存消耗：2,918.20kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000941s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.005643s ]
+[ sql ] [ SQL ] SELECT * FROM `order` WHERE  `store_id` = 2 [ RunTime:0.000431s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:49+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.032847s][吞吐率：30.44req/s] [内存消耗：1,870.43kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:49+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.041238s][吞吐率：24.25req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:58+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.032298s][吞吐率：30.96req/s] [内存消耗：2,010.63kb] [文件加载：48]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:58+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.065740s][吞吐率：15.21req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005555s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005366s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005330s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000401s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:11:58+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.049476s][吞吐率：20.21req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001378s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005216s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000368s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:00+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.070549s][吞吐率：14.17req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006589s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.006265s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005400s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:00+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.048365s][吞吐率：20.68req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000999s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006034s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000786s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:00+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.068546s][吞吐率：14.59req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001025s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005585s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005373s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.006010s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000654s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:00+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.047945s][吞吐率：20.86req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001286s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005459s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000392s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:02+08:00 ] ::1 ::1 GET /eworker/info
+[ log ] localhost/eworker/info [运行时间：0.031467s][吞吐率：31.78req/s] [内存消耗：1,869.69kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:02+08:00 ] ::1 ::1 POST /api/v1/eworker/info
+[ log ] localhost/api/v1/eworker/info [运行时间：0.052075s][吞吐率：19.20req/s] [内存消耗：2,912.70kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000876s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `eworker` [ RunTime:0.005803s ]
+[ sql ] [ SQL ] SELECT * FROM `eworker` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:10+08:00 ] ::1 ::1 GET /eworker/eworkerStoreAll
+[ log ] localhost/eworker/eworkerStoreAll [运行时间：0.029893s][吞吐率：33.45req/s] [内存消耗：1,869.95kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:10+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStore
+[ log ] localhost/api/v1/store/getEworkerStore [运行时间：0.071466s][吞吐率：13.99req/s] [内存消耗：3,071.75kb] [文件加载：68]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001212s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.005584s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 LIMIT 0,15 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.005400s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  `id` IN (1,1) [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.005333s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  ( `storehouse`.`delete_time` IS NULL AND `storehouse`.`delete_time` IS NULL )  AND `id` IN (1,1) [ RunTime:0.000379s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:10+08:00 ] ::1 ::1 POST /api/v1/store/getEworkerStoreCount
+[ log ] localhost/api/v1/store/getEworkerStoreCount [运行时间：0.054950s][吞吐率：18.20req/s] [内存消耗：2,980.26kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001067s ] mysql:dbname=yxadult;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.006047s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `store`.`delete_time` IS NULL  AND `eworker_id` = 1 [ RunTime:0.000468s ]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:11+08:00 ] ::1 ::1 GET /eworker/index
+[ log ] localhost/eworker/index [运行时间：0.032399s][吞吐率：30.86req/s] [内存消耗：1,870.43kb] [文件加载：46]
+
+---------------------------------------------------------------
+[ 2019-11-14T17:12:11+08:00 ] ::1 ::1 GET /welcome
+[ log ] localhost/welcome [运行时间：0.034403s][吞吐率：29.07req/s] [内存消耗：1,859.58kb] [文件加载：46]
+
+---------------------------------------------------------------

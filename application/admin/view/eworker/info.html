@@ -1,0 +1,74 @@
+<!--_meta 作为公共模版分离出去-->
+{include file='store/_meta'}
+<!--/meta 作为公共模版分离出去-->
+
+<link href="__STATIC__/hadmin/lib/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 个人信息 <span class="c-gray en">&gt;</span> 查看信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <form action="javascript:;" method="post" class="form form-horizontal" id="form-article-add">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">账号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text"  class="input-text" readonly id="username" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">姓名：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" readonly id="truename" name="">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2">电话：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" name="" id="phone" readonly class="input-text">
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+{include file='public/_footer'}
+<!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__STATIC__/hadmin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script>
+<script type="text/javascript" src="__STATIC__/hadmin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script src="__STATIC__/js/common.js"></script>
+<script type="text/javascript">
+    //是否获取token令牌，如果没有获取，就要返回登陆界面
+    if(!window.base.getLocalStorage('eworkerToken')){
+        window.location.href = '/yxeworker';
+    }
+    //获得id的商品详情
+    getinfo();
+    function getinfo(){
+        var params={
+            url:'/eworker/info',
+            type:'post',
+            data:{},
+            tokenFlag:true,
+            sCallback:function(res) {
+                //填充商品信息
+                $('#username').val(res.username);
+                $('#truename').val(res.truename);
+                $('#phone').val(res.phone);
+            },
+            eCallback:function(res){
+                alert('获得失败');
+            }
+        };
+        window.base.getEworkerData(params);
+    }
+</script>
+</body>
+</html>
